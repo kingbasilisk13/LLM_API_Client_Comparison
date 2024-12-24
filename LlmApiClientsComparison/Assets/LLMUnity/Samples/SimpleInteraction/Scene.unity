@@ -1035,7 +1035,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   advancedOptions: 0
-  remote: 0
+  remote: 1
   port: 13333
   numThreads: -1
   numGPULayers: 0
@@ -1049,7 +1049,7 @@ MonoBehaviour:
   lora: 
   loraWeights: 
   flashAttention: 0
-  APIKey: 
+  APIKey: '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 '
   SSLCert: 
   SSLCertPath: 
   SSLKey: 
