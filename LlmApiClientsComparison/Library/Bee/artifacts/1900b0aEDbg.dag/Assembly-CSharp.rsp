@@ -403,7 +403,8 @@
 "Assets/LLMUnity/Samples/RAG/RAGUtils.cs"
 "Assets/LLMUnity/Samples/RAG/RAG_Sample.cs"
 "Assets/LLMUnity/Samples/SimpleInteraction/SimpleInteraction.cs"
-"Assets/Scenes/LlmUnity/DiscussionScene/DiscussionScript.cs"
+"Assets/Scenes/HuggingFaceApi/DiscussionScene/DiscussionScriptHuggingFace.cs"
+"Assets/Scenes/LlmUnity/DiscussionScene/DiscussionScriptLLMUnity.cs"
 -langversion:9.0
 
 /deterministic

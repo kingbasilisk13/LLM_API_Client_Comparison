@@ -294,7 +294,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 788762797}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ServerClient, Assembly-CSharp
         m_MethodName: ExitGame
         m_Mode: 1
@@ -718,7 +718,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: AI 1
+  m_Text: 'Eve
+
+'
 --- !u!222 &248445884
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -848,7 +850,7 @@ GameObject:
   - component: {fileID: 458340187}
   - component: {fileID: 458340186}
   m_Layer: 0
-  m_Name: LLMCharacter2
+  m_Name: LLM_Adam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -903,9 +905,11 @@ MonoBehaviour:
   stream: 1
   playerName: Eve
   AIName: Adam
-  prompt: You are a person named Adam. You are having a discussion about a certain
-    subject. You hate this subject. Introduce yourself once and then never again.
-    You only reply ad Adam, you do not repeat the things Eve Says.
+  prompt: 'You are a person named Adam. You are having a discussion with Eve about
+    a certain subject. You hate this subject. You only reply as Adam and do not repeat
+    what Eve says.
+
+'
   setNKeepToPrompt: 1
   chat: []
   grammarString: 
@@ -1152,7 +1156,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: AI 2
+  m_Text: 'Adam
+
+'
 --- !u!222 &687463098
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1170,33 +1176,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 788762798}
-  - component: {fileID: 788762797}
   - component: {fileID: 788762799}
   m_Layer: 0
-  m_Name: MultipleCharacters
+  m_Name: DiscussionHandler
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &788762797
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 788762796}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ddea206563459a4aa07bb3423a66ba8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  llmCharacter1: {fileID: 1083999030}
-  playerText1: {fileID: 0}
-  AIText1: {fileID: 921513404}
-  llmCharacter2: {fileID: 458340186}
-  playerText2: {fileID: 174676810}
-  AIText2: {fileID: 38260721}
 --- !u!4 &788762798
 Transform:
   m_ObjectHideFlags: 0
@@ -1408,7 +1395,7 @@ GameObject:
   - component: {fileID: 1083999031}
   - component: {fileID: 1083999030}
   m_Layer: 0
-  m_Name: LLMCharacter1
+  m_Name: LLM_Eve
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1463,9 +1450,9 @@ MonoBehaviour:
   stream: 1
   playerName: Adam
   AIName: Eve
-  prompt: You are a person named Eve. You are having a discussion about a certain
-    subject. You Love this subject. You only reply ad Eve, you do not repeat the
-    things Adam Says.
+  prompt: You are a person named Eve. You are having a discussion with Adam about
+    a certain subject. You love this subject. You only reply as Eve and do not repeat
+    what Adam says.
   setNKeepToPrompt: 1
   chat: []
   grammarString: 
@@ -1810,8 +1797,8 @@ MonoBehaviour:
   dontDestroyOnLoad: 1
   contextSize: 8192
   batchSize: 512
-  model: qwen2-0_5b-instruct-q4_k_m.gguf
-  chatTemplate: chatml
+  model: gemma-2-9b-it-Q4_K_M.gguf
+  chatTemplate: gemma
   lora: 
   loraWeights: 
   flashAttention: 0
@@ -1821,9 +1808,9 @@ MonoBehaviour:
   SSLKey: 
   SSLKeyPath: 
   minContextLength: 0
-  maxContextLength: 32768
+  maxContextLength: 8192
   embeddingsOnly: 0
-  embeddingLength: 896
+  embeddingLength: 3584
 --- !u!4 &1457589713
 Transform:
   m_ObjectHideFlags: 0
@@ -2175,8 +2162,8 @@ SceneRoots:
   - {fileID: 1965778674}
   - {fileID: 1618258235}
   - {fileID: 1083999031}
+  - {fileID: 458340187}
   - {fileID: 1457589713}
   - {fileID: 788762798}
   - {fileID: 2115750518}
-  - {fileID: 458340187}
   - {fileID: 409413527}
