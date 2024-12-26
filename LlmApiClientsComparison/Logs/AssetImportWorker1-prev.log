@@ -15,7 +15,7 @@ C:/Users/michi/LLM_API_Client_Comparison/LlmApiClientsComparison
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-62939
+63755
 -job-worker-count
 7
 -background-job-worker-count
@@ -58,12 +58,12 @@ C:/Users/michi/LLM_API_Client_Comparison/LlmApiClientsComparison
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [27096] Host "[IP] 192.168.0.238 [Port] 0 [Flags] 2 [Guid] 1126969149 [EditorId] 1126969149 [Version] 1048832 [Id] WindowsEditor(7,Eeckhout_Michie) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
-Player connection [27096] Host "[IP] 192.168.0.238 [Port] 0 [Flags] 2 [Guid] 1126969149 [EditorId] 1126969149 [Version] 1048832 [Id] WindowsEditor(7,Eeckhout_Michie) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [26252] Host "[IP] 192.168.0.238 [Port] 0 [Flags] 2 [Guid] 689455369 [EditorId] 689455369 [Version] 1048832 [Id] WindowsEditor(7,Eeckhout_Michie) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [26252] Host "[IP] 192.168.0.238 [Port] 0 [Flags] 2 [Guid] 689455369 [EditorId] 689455369 [Version] 1048832 [Id] WindowsEditor(7,Eeckhout_Michie) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 7
 [Physics::Module] Initialized MultithreadedJobDispatcher with 7 workers.
 Library Redirect Path: Library/
-Refreshing native plugins compatible for Editor in 2.52 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 3.02 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2023.2.20f1 (0e25a174756c)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Resources/UnitySubsystems
@@ -79,43 +79,43 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56660
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56592
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003475 seconds.
-- Loaded All Assemblies, in  0.394 seconds
+Registered in 0.004785 seconds.
+- Loaded All Assemblies, in  0.444 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.326 seconds
-Domain Reload Profiling: 718ms
-	BeginReloadAssembly (129ms)
+- Finished resetting the current domain, in  0.295 seconds
+Domain Reload Profiling: 736ms
+	BeginReloadAssembly (177ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (38ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (51ms)
-	LoadAllAssembliesAndSetupDomain (162ms)
-		LoadAssemblies (126ms)
+		CreateAndSetChildDomain (2ms)
+	RebuildCommonClasses (39ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (55ms)
+	LoadAllAssembliesAndSetupDomain (158ms)
+		LoadAssemblies (172ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (159ms)
-			TypeCache.Refresh (158ms)
-				TypeCache.ScanAssembly (145ms)
+		AnalyzeDomain (155ms)
+			TypeCache.Refresh (154ms)
+				TypeCache.ScanAssembly (140ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (326ms)
+	FinalizeReload (295ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (272ms)
+		SetupLoadedEditorAssemblies (252ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (10ms)
-			SetLoadedEditorAssemblies (6ms)
+			SetLoadedEditorAssemblies (7ms)
 			BeforeProcessingInitializeOnLoad (5ms)
-			ProcessInitializeOnLoadAttributes (203ms)
-			ProcessInitializeOnLoadMethodAttributes (47ms)
+			ProcessInitializeOnLoadAttributes (185ms)
+			ProcessInitializeOnLoadMethodAttributes (45ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -136,64 +136,64 @@ Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\michi\LLM_API_Client_Comparison\LlmApiClientsComparison\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\michi\LLM_API_Client_Comparison\LlmApiClientsComparison\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.893 seconds
+- Loaded All Assemblies, in  1.280 seconds
 Script 'Packages/com.huggingface.api/Examples/Scripts/TextToImageExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
 Script 'Packages/com.huggingface.api/Examples/Scripts/ConversationExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
 Script 'Packages/com.huggingface.api/Examples/Scripts/SpeechRecognitionExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Refreshing native plugins compatible for Editor in 1.59 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 1.61 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Script 'Packages/com.huggingface.api/Examples/Scripts/TextToImageExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
 Script 'Packages/com.huggingface.api/Examples/Scripts/ConversationExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
 Script 'Packages/com.huggingface.api/Examples/Scripts/SpeechRecognitionExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.764 seconds
-Domain Reload Profiling: 1654ms
-	BeginReloadAssembly (365ms)
+- Finished resetting the current domain, in  0.709 seconds
+Domain Reload Profiling: 1982ms
+	BeginReloadAssembly (696ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (5ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (36ms)
-	RebuildCommonClasses (32ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (35ms)
-	LoadAllAssembliesAndSetupDomain (446ms)
-		LoadAssemblies (371ms)
+		CreateAndSetChildDomain (35ms)
+	RebuildCommonClasses (31ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (36ms)
+	LoadAllAssembliesAndSetupDomain (498ms)
+		LoadAssemblies (425ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (167ms)
+		AnalyzeDomain (166ms)
 			TypeCache.Refresh (143ms)
 				TypeCache.ScanAssembly (128ms)
 			BuildScriptInfoCaches (17ms)
 			ResolveRequiredComponents (3ms)
-	FinalizeReload (765ms)
+	FinalizeReload (710ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (567ms)
+		SetupLoadedEditorAssemblies (533ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (2ms)
-			SetLoadedEditorAssemblies (6ms)
-			BeforeProcessingInitializeOnLoad (72ms)
-			ProcessInitializeOnLoadAttributes (423ms)
-			ProcessInitializeOnLoadMethodAttributes (57ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (67ms)
+			ProcessInitializeOnLoadAttributes (422ms)
+			ProcessInitializeOnLoadMethodAttributes (30ms)
 			AfterProcessingInitializeOnLoad (7ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (11ms)
+		AwakeInstancesAfterBackupRestoration (8ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
-Refreshing native plugins compatible for Editor in 1.62 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 1.77 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 24 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3242 unused Assets / (1.0 MB). Loaded Objects now: 3824.
-Memory consumption went from 107.5 MB to 106.5 MB.
-Total: 7.725100 ms (FindLiveObjects: 0.345300 ms CreateObjectMapping: 0.439400 ms MarkObjects: 5.934700 ms  DeleteObjects: 1.004600 ms)
+Unloading 3242 unused Assets / (0.8 MB). Loaded Objects now: 3824.
+Memory consumption went from 106.9 MB to 106.2 MB.
+Total: 6.532500 ms (FindLiveObjects: 0.438300 ms CreateObjectMapping: 0.508100 ms MarkObjects: 4.596000 ms  DeleteObjects: 0.988200 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 254155.784415 seconds.
-  path: Assets/StreamingAssets/KnowledgeBaseGame.zip
-  artifactKey: Guid(720280f9252b82b4d8cb51f4ad5b531f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StreamingAssets/KnowledgeBaseGame.zip using Guid(720280f9252b82b4d8cb51f4ad5b531f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '757b4ec1fd00f21f84cb51271228b1b2') in 0.019179 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+  Time since last request: 255640.476523 seconds.
+  path: Assets/Scenes/HuggingFaceApi/DiscussionScene/DiscussionScene.unity
+  artifactKey: Guid(065239ddfb818654e809e8432c235546) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/HuggingFaceApi/DiscussionScene/DiscussionScene.unity using Guid(065239ddfb818654e809e8432c235546) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'db7c940ddafcf479593023bc565e5b9a') in 0.0080114 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
 Received Prepare
@@ -207,7 +207,7 @@ Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\michi\LLM_API_Client_Comparison\LlmApiClientsComparison\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\michi\LLM_API_Client_Comparison\LlmApiClientsComparison\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.627 seconds
+- Loaded All Assemblies, in  0.570 seconds
 Script 'Packages/com.huggingface.api/Examples/Scripts/TextToImageExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
 Script 'Packages/com.huggingface.api/Examples/Scripts/ConversationExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
 Script 'Packages/com.huggingface.api/Examples/Scripts/SpeechRecognitionExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
@@ -1774,91 +1774,45 @@ Native extension for WindowsStandalone target not found
 Script 'Packages/com.huggingface.api/Examples/Scripts/TextToImageExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
 Script 'Packages/com.huggingface.api/Examples/Scripts/ConversationExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
 Script 'Packages/com.huggingface.api/Examples/Scripts/SpeechRecognitionExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Downloading https://github.com/undreamai/LlamaLib/releases/download/v1.2.1/undreamai-v1.2.1-llamacpp.zip to C:/Users/michi/AppData/Local/Temp/DefaultCompany/LlmApiClientsComparison\undreamai-v1.2.1-llamacpp.zip...
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-LLMUnity.LLMUnitySetup:Log (string) (at Assets/LLMUnity/Runtime/LLMUnitySetup.cs:173)
-LLMUnity.LLMUnitySetup/<DownloadFile>d__31:MoveNext () (at Assets/LLMUnity/Runtime/LLMUnitySetup.cs:269)
-System.Runtime.CompilerServices.AsyncTaskMethodBuilder:Start<LLMUnity.LLMUnitySetup/<DownloadFile>d__31> (LLMUnity.LLMUnitySetup/<DownloadFile>d__31&)
-LLMUnity.LLMUnitySetup:DownloadFile (string,string,bool,LLMUnity.Callback`1<string>,LLMUnity.Callback`1<single>)
-LLMUnity.LLMUnitySetup/<DownloadAndExtractInsideDirectory>d__41:MoveNext () (at Assets/LLMUnity/Runtime/LLMUnitySetup.cs:407)
-System.Runtime.CompilerServices.AsyncTaskMethodBuilder:Start<LLMUnity.LLMUnitySetup/<DownloadAndExtractInsideDirectory>d__41> (LLMUnity.LLMUnitySetup/<DownloadAndExtractInsideDirectory>d__41&)
-LLMUnity.LLMUnitySetup:DownloadAndExtractInsideDirectory (string,string,string)
-LLMUnity.LLMUnitySetup/<DownloadLibrary>d__43:MoveNext () (at Assets/LLMUnity/Runtime/LLMUnitySetup.cs:456)
-System.Runtime.CompilerServices.AsyncTaskMethodBuilder:Start<LLMUnity.LLMUnitySetup/<DownloadLibrary>d__43> (LLMUnity.LLMUnitySetup/<DownloadLibrary>d__43&)
-LLMUnity.LLMUnitySetup:DownloadLibrary ()
-LLMUnity.LLMUnitySetup/<InitializeOnLoad>d__28:MoveNext () (at Assets/LLMUnity/Runtime/LLMUnitySetup.cs:237)
-System.Runtime.CompilerServices.AsyncTaskMethodBuilder:Start<LLMUnity.LLMUnitySetup/<InitializeOnLoad>d__28> (LLMUnity.LLMUnitySetup/<InitializeOnLoad>d__28&)
-LLMUnity.LLMUnitySetup:InitializeOnLoad ()
-System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
-System.Reflection.MethodBase:Invoke (object,object[])
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
-
-(Filename: Assets/LLMUnity/Runtime/LLMUnitySetup.cs Line: 173)
-
-Sharing violation on path C:\Users\michi\AppData\Local\Temp\DefaultCompany\LlmApiClientsComparison\undreamai-v1.2.1-llamacpp.zip
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-LLMUnity.LLMUnitySetup:LogError (string) (at Assets/LLMUnity/Runtime/LLMUnitySetup.cs:185)
-LLMUnity.LLMUnitySetup/<DownloadLibrary>d__43:MoveNext () (at Assets/LLMUnity/Runtime/LLMUnitySetup.cs:463)
-System.Runtime.CompilerServices.AsyncTaskMethodBuilder:Start<LLMUnity.LLMUnitySetup/<DownloadLibrary>d__43> (LLMUnity.LLMUnitySetup/<DownloadLibrary>d__43&)
-LLMUnity.LLMUnitySetup:DownloadLibrary ()
-LLMUnity.LLMUnitySetup/<InitializeOnLoad>d__28:MoveNext () (at Assets/LLMUnity/Runtime/LLMUnitySetup.cs:237)
-System.Runtime.CompilerServices.AsyncTaskMethodBuilder:Start<LLMUnity.LLMUnitySetup/<InitializeOnLoad>d__28> (LLMUnity.LLMUnitySetup/<InitializeOnLoad>d__28&)
-LLMUnity.LLMUnitySetup:InitializeOnLoad ()
-System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
-System.Reflection.MethodBase:Invoke (object,object[])
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
-
-(Filename: Assets/LLMUnity/Runtime/LLMUnitySetup.cs Line: 185)
-
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.746 seconds
-Domain Reload Profiling: 1371ms
-	BeginReloadAssembly (189ms)
+- Finished resetting the current domain, in  0.720 seconds
+Domain Reload Profiling: 1289ms
+	BeginReloadAssembly (178ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (5ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (51ms)
-	RebuildCommonClasses (35ms)
+		CreateAndSetChildDomain (46ms)
+	RebuildCommonClasses (29ms)
 	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (26ms)
-	LoadAllAssembliesAndSetupDomain (365ms)
-		LoadAssemblies (330ms)
+	initialDomainReloadingComplete (25ms)
+	LoadAllAssembliesAndSetupDomain (326ms)
+		LoadAssemblies (305ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (129ms)
+		AnalyzeDomain (107ms)
 			TypeCache.Refresh (5ms)
 				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (116ms)
-			ResolveRequiredComponents (4ms)
-	FinalizeReload (746ms)
+			BuildScriptInfoCaches (96ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (721ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (544ms)
+		SetupLoadedEditorAssemblies (523ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (2ms)
-			SetLoadedEditorAssemblies (5ms)
-			BeforeProcessingInitializeOnLoad (73ms)
-			ProcessInitializeOnLoadAttributes (393ms)
-			ProcessInitializeOnLoadMethodAttributes (64ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (79ms)
+			ProcessInitializeOnLoadAttributes (395ms)
+			ProcessInitializeOnLoadMethodAttributes (34ms)
 			AfterProcessingInitializeOnLoad (6ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (8ms)
-Refreshing native plugins compatible for Editor in 1.83 ms, found 4 plugins.
+		AwakeInstancesAfterBackupRestoration (11ms)
+Refreshing native plugins compatible for Editor in 1.63 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3240 unused Assets / (0.8 MB). Loaded Objects now: 3828.
-Memory consumption went from 104.9 MB to 104.2 MB.
-Total: 6.130100 ms (FindLiveObjects: 0.379200 ms CreateObjectMapping: 0.429000 ms MarkObjects: 4.449800 ms  DeleteObjects: 0.871400 ms)
+Unloading 3240 unused Assets / (0.9 MB). Loaded Objects now: 3827.
+Memory consumption went from 104.9 MB to 104.0 MB.
+Total: 6.218300 ms (FindLiveObjects: 0.342600 ms CreateObjectMapping: 0.350300 ms MarkObjects: 4.603800 ms  DeleteObjects: 0.920900 ms)
 
 Prepare: number of updated asset objects reloaded= 0

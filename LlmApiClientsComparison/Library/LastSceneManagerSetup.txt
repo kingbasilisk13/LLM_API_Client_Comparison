@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/HuggingFaceApi/DiscussionScene/DiscussionScene.unity
+- path: Assets/Scenes/LlmUnity/DiscussionScene/DiscussionScene.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
