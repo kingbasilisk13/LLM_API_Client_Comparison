@@ -404,6 +404,7 @@
 "Assets/LLMUnity/Samples/RAG/RAG_Sample.cs"
 "Assets/LLMUnity/Samples/SimpleInteraction/SimpleInteraction.cs"
 "Assets/Scenes/HuggingFaceApi/DiscussionScene/DiscussionScriptHuggingFace.cs"
+"Assets/Scenes/HuggingFaceApi/MazeNavigation/MazeHandlerHuggingFace.cs"
 "Assets/Scenes/LlmUnity/DiscussionScene/DiscussionScriptLLMUnity.cs"
 -langversion:9.0
 
