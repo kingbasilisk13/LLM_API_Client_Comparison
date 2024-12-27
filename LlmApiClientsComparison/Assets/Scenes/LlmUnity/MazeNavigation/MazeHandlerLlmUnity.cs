@@ -104,4 +104,8 @@ public class MazeHandlerLlmUnity : MonoBehaviour
 
         }
     }
+    private void OnApplicationQuit()
+    {
+        llmCharacter.CancelRequests();
+    }
 }
