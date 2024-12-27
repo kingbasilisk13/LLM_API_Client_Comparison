@@ -11,6 +11,8 @@ using UnityEngine.UIElements;
 
 public class MazeHandlerHuggingFace : MonoBehaviour
 {
+    private CharacterController controller;
+
     public InputField subjectField;
     public string[] ActionList;
 
@@ -34,35 +36,48 @@ public class MazeHandlerHuggingFace : MonoBehaviour
     void Start()
     {
         subjectField.onSubmit.AddListener(onSubjectFieldSubmit);
+        controller = gameObject.AddComponent<CharacterController>();
     }
     public void onSubjectFieldSubmit(string message)
     {
         HuggingFaceAPI.SentenceSimilarity(message, FindValues, Error, ActionList);
     }
 
+    private void MoveNpc(Vector3 direction)
+    {
+        controller.Move(direction * Time.deltaTime * speed);
+
+        if (direction != Vector3.zero)
+        {
+            gameObject.transform.forward = direction;
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {
-        switch (state) 
+        switch (state)
         {
             default:
             case State.Idle:
                 break;
 
             case State.Up:
-                transform.position += new Vector3(0, 0, 1) * speed * Time.deltaTime;
+                MoveNpc(new Vector3(0, 0, 1));
+
                 break;
 
             case State.Down:
+                MoveNpc(new Vector3(0, 0, -1));
                 transform.position += new Vector3(0, 0, -1) * speed * Time.deltaTime;
                 break;
 
             case State.Left:
-                transform.position += new Vector3(-1, 0, 0) * speed * Time.deltaTime;
+                MoveNpc(new Vector3(-1, 0, 0));
                 break;
 
             case State.Right:
-                transform.position += new Vector3(1, 0, 0) * speed * Time.deltaTime;
+                MoveNpc(new Vector3(1, 0, 0));
                 break;
 
             case State.Stop:
