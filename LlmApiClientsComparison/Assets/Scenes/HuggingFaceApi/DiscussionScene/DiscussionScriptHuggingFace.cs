@@ -39,13 +39,7 @@ public class DiscussionInteractionHuggingFace
         string inputText = $"{Description}." +
             $"The subject is {Subject}." +
             $"What do you think of this subject?";
-
-        /*
-         * You are a person named Eve. You are having a discussion with Adam about a certain subject. You love this subject. You only reply as Eve and do not repeat what Adam says.
-         */
-
         HuggingFaceAPI.TextGeneration(inputText, SetAIText, OnError);
-
     }
 
     public void SetAIText(string text)
@@ -120,8 +114,6 @@ public class DiscussionScriptHuggingFace : MonoBehaviour
 
     public void CancelRequests()
     {
-        //llmCharacter1.CancelRequests();
-        //llmCharacter2.CancelRequests();
         interaction1.StopTalking = true;
         interaction2.StopTalking = true;
 
@@ -133,21 +125,8 @@ public class DiscussionScriptHuggingFace : MonoBehaviour
         Debug.Log("Exit button clicked");
         Application.Quit();
     }
-
-    //bool onValidateWarning = true;
-    //void OnValidate()
-    //{
-    //    if (onValidateWarning && !llmCharacter1.remote && llmCharacter1.llm != null && llmCharacter1.llm.model == "")
-    //    {
-    //        Debug.LogWarning($"Please select a model in the {llmCharacter1.llm.gameObject.name} GameObject!");
-    //        onValidateWarning = false;
-    //    }
-    //}
-
     private void OnApplicationQuit()
     {
-        //llmCharacter1.CancelRequests();
-        //llmCharacter2.CancelRequests();
         interaction1.StopTalking = true;
         interaction2.StopTalking = true;
     }

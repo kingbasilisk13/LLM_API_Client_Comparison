@@ -10,8 +10,6 @@ using UnityEditor.VersionControl;
 
 public class DiscussionInteraction
 {
-    string persenolStand;
-
     string Subject;
 
     Text AIText;
@@ -23,9 +21,8 @@ public class DiscussionInteraction
 
     public bool StopTalking = false;
 
-    public DiscussionInteraction(string stand, Text AIText, LLMCharacter llmCharacter)
+    public DiscussionInteraction(Text AIText, LLMCharacter llmCharacter)
     {
-        this.persenolStand = stand;
         this.AIText = AIText;
         this.llmCharacter = llmCharacter;
     }
@@ -90,8 +87,8 @@ public class DiscussionScriptLLMUnity : MonoBehaviour
         subjectField.onSubmit.AddListener(onSubjectFieldSubmit);
 
 
-        interaction1 = new DiscussionInteraction("positive",AIText1, llmCharacter1);
-        interaction2 = new DiscussionInteraction("negative", AIText2, llmCharacter2);
+        interaction1 = new DiscussionInteraction(AIText1, llmCharacter1);
+        interaction2 = new DiscussionInteraction(AIText2, llmCharacter2);
 
         interaction1.SetPartner(interaction2);
         interaction2.SetPartner(interaction1);
