@@ -263,8 +263,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 461, y: -297.97}
-  m_SizeDelta: {x: 350, y: 100}
+  m_AnchoredPosition: {x: 368.4, y: -13.7}
+  m_SizeDelta: {x: 528.3, y: 177.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &167145905
 MonoBehaviour:
@@ -1516,10 +1516,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 16
+    m_FontSize: 35
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 3
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -2125,10 +2125,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 16
+    m_FontSize: 35
     m_FontStyle: 2
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 3
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -2136,7 +2136,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Enter a subject to discuss...
+  m_Text: Enter a direction to move in...
 --- !u!222 &1644013313
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2231,7 +2231,7 @@ Transform:
   m_GameObject: {fileID: 1792863792}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 12.18, y: 41.79, z: 0}
+  m_LocalPosition: {x: 17.12, y: 41.79, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

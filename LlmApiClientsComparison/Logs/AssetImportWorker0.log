@@ -15,7 +15,7 @@ C:/Users/michi/LLM_API_Client_Comparison/LlmApiClientsComparison
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-59174
+54626
 -job-worker-count
 7
 -background-job-worker-count
@@ -58,12 +58,12 @@ C:/Users/michi/LLM_API_Client_Comparison/LlmApiClientsComparison
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [31620] Host "[IP] 192.168.0.215 [Port] 0 [Flags] 2 [Guid] 2454684652 [EditorId] 2454684652 [Version] 1048832 [Id] WindowsEditor(7,Eeckhout_Michie) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
-Player connection [31620] Host "[IP] 192.168.0.215 [Port] 0 [Flags] 2 [Guid] 2454684652 [EditorId] 2454684652 [Version] 1048832 [Id] WindowsEditor(7,Eeckhout_Michie) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [2732] Host "[IP] 192.168.0.185 [Port] 0 [Flags] 2 [Guid] 1883486354 [EditorId] 1883486354 [Version] 1048832 [Id] WindowsEditor(7,Eeckhout_Michie) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [2732] Host "[IP] 192.168.0.185 [Port] 0 [Flags] 2 [Guid] 1883486354 [EditorId] 1883486354 [Version] 1048832 [Id] WindowsEditor(7,Eeckhout_Michie) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 7
 [Physics::Module] Initialized MultithreadedJobDispatcher with 7 workers.
 Library Redirect Path: Library/
-Refreshing native plugins compatible for Editor in 127.02 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 4.83 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2023.2.20f1 (0e25a174756c)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Resources/UnitySubsystems
@@ -79,43 +79,43 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56896
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56044
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003955 seconds.
-- Loaded All Assemblies, in  1.088 seconds
+Registered in 0.004998 seconds.
+- Loaded All Assemblies, in  0.408 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.331 seconds
-Domain Reload Profiling: 1418ms
-	BeginReloadAssembly (175ms)
+- Finished resetting the current domain, in  0.295 seconds
+Domain Reload Profiling: 700ms
+	BeginReloadAssembly (160ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (2ms)
-	RebuildCommonClasses (209ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (52ms)
-	LoadAllAssembliesAndSetupDomain (636ms)
-		LoadAssemblies (169ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (36ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (54ms)
+	LoadAllAssembliesAndSetupDomain (144ms)
+		LoadAssemblies (156ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (632ms)
-			TypeCache.Refresh (631ms)
-				TypeCache.ScanAssembly (357ms)
+		AnalyzeDomain (142ms)
+			TypeCache.Refresh (141ms)
+				TypeCache.ScanAssembly (128ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (332ms)
+	FinalizeReload (295ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (281ms)
+		SetupLoadedEditorAssemblies (246ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (10ms)
-			SetLoadedEditorAssemblies (6ms)
-			BeforeProcessingInitializeOnLoad (7ms)
-			ProcessInitializeOnLoadAttributes (198ms)
-			ProcessInitializeOnLoadMethodAttributes (59ms)
+			InitializePlatformSupportModulesInManaged (9ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (5ms)
+			ProcessInitializeOnLoadAttributes (183ms)
+			ProcessInitializeOnLoadMethodAttributes (43ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -136,525 +136,551 @@ Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\michi\LLM_API_Client_Comparison\LlmApiClientsComparison\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\michi\LLM_API_Client_Comparison\LlmApiClientsComparison\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  2.790 seconds
+- Loaded All Assemblies, in  1.250 seconds
 Script 'Packages/com.huggingface.api/Examples/Scripts/TextToImageExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
 Script 'Packages/com.huggingface.api/Examples/Scripts/ConversationExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
 Script 'Packages/com.huggingface.api/Examples/Scripts/SpeechRecognitionExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Refreshing native plugins compatible for Editor in 1.77 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 1.76 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Script 'Packages/com.huggingface.api/Examples/Scripts/TextToImageExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
 Script 'Packages/com.huggingface.api/Examples/Scripts/ConversationExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
 Script 'Packages/com.huggingface.api/Examples/Scripts/SpeechRecognitionExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.720 seconds
-Domain Reload Profiling: 3505ms
-	BeginReloadAssembly (702ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (36ms)
-	RebuildCommonClasses (33ms)
-	RebuildNativeTypeToScriptingClass (17ms)
-	initialDomainReloadingComplete (37ms)
-	LoadAllAssembliesAndSetupDomain (1996ms)
-		LoadAssemblies (1861ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (234ms)
-			TypeCache.Refresh (210ms)
-				TypeCache.ScanAssembly (144ms)
-			BuildScriptInfoCaches (17ms)
-			ResolveRequiredComponents (3ms)
-	FinalizeReload (720ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (542ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (2ms)
-			SetLoadedEditorAssemblies (5ms)
-			BeforeProcessingInitializeOnLoad (69ms)
-			ProcessInitializeOnLoadAttributes (427ms)
-			ProcessInitializeOnLoadMethodAttributes (32ms)
-			AfterProcessingInitializeOnLoad (7ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (10ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
-Refreshing native plugins compatible for Editor in 2.18 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 24 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3244 unused Assets / (1.4 MB). Loaded Objects now: 3828.
-Memory consumption went from 107.9 MB to 106.6 MB.
-Total: 7.010300 ms (FindLiveObjects: 0.443000 ms CreateObjectMapping: 0.482200 ms MarkObjects: 4.641400 ms  DeleteObjects: 1.442200 ms)
-
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 1.60 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3231 unused Assets / (0.8 MB). Loaded Objects now: 3828.
-Memory consumption went from 101.3 MB to 100.5 MB.
-Total: 7.122200 ms (FindLiveObjects: 0.401600 ms CreateObjectMapping: 0.206900 ms MarkObjects: 5.740600 ms  DeleteObjects: 0.771600 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Script 'Packages/com.huggingface.api/Examples/Scripts/TextToImageExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Script 'Packages/com.huggingface.api/Examples/Scripts/ConversationExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Script 'Packages/com.huggingface.api/Examples/Scripts/SpeechRecognitionExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Script 'Packages/com.huggingface.api/Examples/Scripts/TextToImageExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Script 'Packages/com.huggingface.api/Examples/Scripts/ConversationExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Script 'Packages/com.huggingface.api/Examples/Scripts/SpeechRecognitionExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\michi\LLM_API_Client_Comparison\LlmApiClientsComparison\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\michi\LLM_API_Client_Comparison\LlmApiClientsComparison\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.652 seconds
-Script 'Packages/com.huggingface.api/Examples/Scripts/TextToImageExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Script 'Packages/com.huggingface.api/Examples/Scripts/ConversationExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Script 'Packages/com.huggingface.api/Examples/Scripts/SpeechRecognitionExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Refreshing native plugins compatible for Editor in 1.47 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Script 'Packages/com.huggingface.api/Examples/Scripts/TextToImageExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Script 'Packages/com.huggingface.api/Examples/Scripts/ConversationExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Script 'Packages/com.huggingface.api/Examples/Scripts/SpeechRecognitionExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.648 seconds
-Domain Reload Profiling: 1297ms
-	BeginReloadAssembly (193ms)
+- Finished resetting the current domain, in  0.707 seconds
+Domain Reload Profiling: 1953ms
+	BeginReloadAssembly (676ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (5ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (51ms)
-	RebuildCommonClasses (32ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (26ms)
-	LoadAllAssembliesAndSetupDomain (386ms)
-		LoadAssemblies (369ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (115ms)
-			TypeCache.Refresh (7ms)
-				TypeCache.ScanAssembly (1ms)
-			BuildScriptInfoCaches (102ms)
-			ResolveRequiredComponents (3ms)
-	FinalizeReload (648ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (475ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (2ms)
-			SetLoadedEditorAssemblies (5ms)
-			BeforeProcessingInitializeOnLoad (69ms)
-			ProcessInitializeOnLoadAttributes (360ms)
-			ProcessInitializeOnLoadMethodAttributes (33ms)
-			AfterProcessingInitializeOnLoad (6ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (8ms)
-Refreshing native plugins compatible for Editor in 1.60 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3242 unused Assets / (1.0 MB). Loaded Objects now: 3829.
-Memory consumption went from 104.6 MB to 103.7 MB.
-Total: 5.945200 ms (FindLiveObjects: 0.332900 ms CreateObjectMapping: 0.406800 ms MarkObjects: 4.235400 ms  DeleteObjects: 0.969100 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Script 'Packages/com.huggingface.api/Examples/Scripts/TextToImageExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Script 'Packages/com.huggingface.api/Examples/Scripts/ConversationExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Script 'Packages/com.huggingface.api/Examples/Scripts/SpeechRecognitionExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Script 'Packages/com.huggingface.api/Examples/Scripts/TextToImageExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Script 'Packages/com.huggingface.api/Examples/Scripts/ConversationExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Script 'Packages/com.huggingface.api/Examples/Scripts/SpeechRecognitionExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\michi\LLM_API_Client_Comparison\LlmApiClientsComparison\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\michi\LLM_API_Client_Comparison\LlmApiClientsComparison\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.606 seconds
-Script 'Packages/com.huggingface.api/Examples/Scripts/TextToImageExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Script 'Packages/com.huggingface.api/Examples/Scripts/ConversationExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Script 'Packages/com.huggingface.api/Examples/Scripts/SpeechRecognitionExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Refreshing native plugins compatible for Editor in 1.54 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Script 'Packages/com.huggingface.api/Examples/Scripts/TextToImageExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Script 'Packages/com.huggingface.api/Examples/Scripts/ConversationExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Script 'Packages/com.huggingface.api/Examples/Scripts/SpeechRecognitionExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.700 seconds
-Domain Reload Profiling: 1303ms
-	BeginReloadAssembly (186ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (5ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (46ms)
+		CreateAndSetChildDomain (34ms)
 	RebuildCommonClasses (31ms)
 	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (27ms)
-	LoadAllAssembliesAndSetupDomain (347ms)
-		LoadAssemblies (321ms)
+	initialDomainReloadingComplete (35ms)
+	LoadAllAssembliesAndSetupDomain (493ms)
+		LoadAssemblies (419ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (125ms)
-			TypeCache.Refresh (6ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (112ms)
-			ResolveRequiredComponents (4ms)
-	FinalizeReload (700ms)
+		AnalyzeDomain (164ms)
+			TypeCache.Refresh (140ms)
+				TypeCache.ScanAssembly (125ms)
+			BuildScriptInfoCaches (18ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (707ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (520ms)
+		SetupLoadedEditorAssemblies (532ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (2ms)
-			SetLoadedEditorAssemblies (6ms)
-			BeforeProcessingInitializeOnLoad (75ms)
-			ProcessInitializeOnLoadAttributes (394ms)
-			ProcessInitializeOnLoadMethodAttributes (36ms)
-			AfterProcessingInitializeOnLoad (6ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (8ms)
-Refreshing native plugins compatible for Editor in 1.60 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3242 unused Assets / (0.9 MB). Loaded Objects now: 3830.
-Memory consumption went from 106.6 MB to 105.7 MB.
-Total: 6.372400 ms (FindLiveObjects: 0.342900 ms CreateObjectMapping: 0.703100 ms MarkObjects: 4.386200 ms  DeleteObjects: 0.939500 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 1.73 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3231 unused Assets / (0.9 MB). Loaded Objects now: 3830.
-Memory consumption went from 106.7 MB to 105.8 MB.
-Total: 6.533600 ms (FindLiveObjects: 0.376300 ms CreateObjectMapping: 0.443200 ms MarkObjects: 4.783200 ms  DeleteObjects: 0.929800 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Script 'Packages/com.huggingface.api/Examples/Scripts/TextToImageExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Script 'Packages/com.huggingface.api/Examples/Scripts/ConversationExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Script 'Packages/com.huggingface.api/Examples/Scripts/SpeechRecognitionExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Script 'Packages/com.huggingface.api/Examples/Scripts/TextToImageExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Script 'Packages/com.huggingface.api/Examples/Scripts/ConversationExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Script 'Packages/com.huggingface.api/Examples/Scripts/SpeechRecognitionExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\michi\LLM_API_Client_Comparison\LlmApiClientsComparison\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\michi\LLM_API_Client_Comparison\LlmApiClientsComparison\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.619 seconds
-Script 'Packages/com.huggingface.api/Examples/Scripts/TextToImageExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Script 'Packages/com.huggingface.api/Examples/Scripts/ConversationExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Script 'Packages/com.huggingface.api/Examples/Scripts/SpeechRecognitionExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Refreshing native plugins compatible for Editor in 1.55 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Script 'Packages/com.huggingface.api/Examples/Scripts/TextToImageExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Script 'Packages/com.huggingface.api/Examples/Scripts/ConversationExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Script 'Packages/com.huggingface.api/Examples/Scripts/SpeechRecognitionExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.608 seconds
-Domain Reload Profiling: 1225ms
-	BeginReloadAssembly (186ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (4ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (48ms)
-	RebuildCommonClasses (36ms)
-	RebuildNativeTypeToScriptingClass (16ms)
-	initialDomainReloadingComplete (25ms)
-	LoadAllAssembliesAndSetupDomain (354ms)
-		LoadAssemblies (330ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (116ms)
-			TypeCache.Refresh (7ms)
-				TypeCache.ScanAssembly (1ms)
-			BuildScriptInfoCaches (103ms)
-			ResolveRequiredComponents (3ms)
-	FinalizeReload (608ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (454ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (2ms)
-			SetLoadedEditorAssemblies (5ms)
-			BeforeProcessingInitializeOnLoad (68ms)
-			ProcessInitializeOnLoadAttributes (344ms)
-			ProcessInitializeOnLoadMethodAttributes (29ms)
-			AfterProcessingInitializeOnLoad (6ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (9ms)
-Refreshing native plugins compatible for Editor in 1.72 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3242 unused Assets / (0.8 MB). Loaded Objects now: 3831.
-Memory consumption went from 108.5 MB to 107.7 MB.
-Total: 5.795500 ms (FindLiveObjects: 0.361300 ms CreateObjectMapping: 0.443300 ms MarkObjects: 4.160400 ms  DeleteObjects: 0.829700 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Script 'Packages/com.huggingface.api/Examples/Scripts/TextToImageExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Script 'Packages/com.huggingface.api/Examples/Scripts/ConversationExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Script 'Packages/com.huggingface.api/Examples/Scripts/SpeechRecognitionExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Script 'Packages/com.huggingface.api/Examples/Scripts/TextToImageExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Script 'Packages/com.huggingface.api/Examples/Scripts/ConversationExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Script 'Packages/com.huggingface.api/Examples/Scripts/SpeechRecognitionExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\michi\LLM_API_Client_Comparison\LlmApiClientsComparison\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\michi\LLM_API_Client_Comparison\LlmApiClientsComparison\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.618 seconds
-Script 'Packages/com.huggingface.api/Examples/Scripts/TextToImageExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Script 'Packages/com.huggingface.api/Examples/Scripts/ConversationExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Script 'Packages/com.huggingface.api/Examples/Scripts/SpeechRecognitionExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Refreshing native plugins compatible for Editor in 1.61 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Script 'Packages/com.huggingface.api/Examples/Scripts/TextToImageExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Script 'Packages/com.huggingface.api/Examples/Scripts/ConversationExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Script 'Packages/com.huggingface.api/Examples/Scripts/SpeechRecognitionExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.697 seconds
-Domain Reload Profiling: 1313ms
-	BeginReloadAssembly (179ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (4ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (43ms)
-	RebuildCommonClasses (33ms)
-	RebuildNativeTypeToScriptingClass (17ms)
-	initialDomainReloadingComplete (28ms)
-	LoadAllAssembliesAndSetupDomain (359ms)
-		LoadAssemblies (327ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (129ms)
-			TypeCache.Refresh (5ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (117ms)
-			ResolveRequiredComponents (3ms)
-	FinalizeReload (698ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (512ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (4ms)
-			SetLoadedEditorAssemblies (6ms)
-			BeforeProcessingInitializeOnLoad (71ms)
-			ProcessInitializeOnLoadAttributes (393ms)
-			ProcessInitializeOnLoadMethodAttributes (32ms)
-			AfterProcessingInitializeOnLoad (6ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (9ms)
-Refreshing native plugins compatible for Editor in 1.67 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3242 unused Assets / (0.8 MB). Loaded Objects now: 3832.
-Memory consumption went from 110.5 MB to 109.6 MB.
-Total: 6.391800 ms (FindLiveObjects: 0.335400 ms CreateObjectMapping: 0.523900 ms MarkObjects: 4.602200 ms  DeleteObjects: 0.929500 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Script 'Packages/com.huggingface.api/Examples/Scripts/TextToImageExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Script 'Packages/com.huggingface.api/Examples/Scripts/ConversationExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Script 'Packages/com.huggingface.api/Examples/Scripts/SpeechRecognitionExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Script 'Packages/com.huggingface.api/Examples/Scripts/TextToImageExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Script 'Packages/com.huggingface.api/Examples/Scripts/ConversationExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Script 'Packages/com.huggingface.api/Examples/Scripts/SpeechRecognitionExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\michi\LLM_API_Client_Comparison\LlmApiClientsComparison\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\michi\LLM_API_Client_Comparison\LlmApiClientsComparison\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.612 seconds
-Script 'Packages/com.huggingface.api/Examples/Scripts/TextToImageExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Script 'Packages/com.huggingface.api/Examples/Scripts/ConversationExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Script 'Packages/com.huggingface.api/Examples/Scripts/SpeechRecognitionExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Refreshing native plugins compatible for Editor in 1.59 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Script 'Packages/com.huggingface.api/Examples/Scripts/TextToImageExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Script 'Packages/com.huggingface.api/Examples/Scripts/ConversationExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Script 'Packages/com.huggingface.api/Examples/Scripts/SpeechRecognitionExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.702 seconds
-Domain Reload Profiling: 1311ms
-	BeginReloadAssembly (183ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (4ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (45ms)
-	RebuildCommonClasses (34ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (25ms)
-	LoadAllAssembliesAndSetupDomain (355ms)
-		LoadAssemblies (334ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (119ms)
-			TypeCache.Refresh (5ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (108ms)
-			ResolveRequiredComponents (3ms)
-	FinalizeReload (703ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (520ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (3ms)
 			SetLoadedEditorAssemblies (5ms)
 			BeforeProcessingInitializeOnLoad (74ms)
-			ProcessInitializeOnLoadAttributes (393ms)
-			ProcessInitializeOnLoadMethodAttributes (37ms)
-			AfterProcessingInitializeOnLoad (7ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (13ms)
-Refreshing native plugins compatible for Editor in 2.11 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3242 unused Assets / (1.0 MB). Loaded Objects now: 3833.
-Memory consumption went from 112.4 MB to 111.4 MB.
-Total: 7.282100 ms (FindLiveObjects: 0.396100 ms CreateObjectMapping: 0.580900 ms MarkObjects: 5.114500 ms  DeleteObjects: 1.189300 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Script 'Packages/com.huggingface.api/Examples/Scripts/TextToImageExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Script 'Packages/com.huggingface.api/Examples/Scripts/ConversationExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Script 'Packages/com.huggingface.api/Examples/Scripts/SpeechRecognitionExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Script 'Packages/com.huggingface.api/Examples/Scripts/TextToImageExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Script 'Packages/com.huggingface.api/Examples/Scripts/ConversationExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Script 'Packages/com.huggingface.api/Examples/Scripts/SpeechRecognitionExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\michi\LLM_API_Client_Comparison\LlmApiClientsComparison\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\michi\LLM_API_Client_Comparison\LlmApiClientsComparison\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.589 seconds
-Script 'Packages/com.huggingface.api/Examples/Scripts/TextToImageExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Script 'Packages/com.huggingface.api/Examples/Scripts/ConversationExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Script 'Packages/com.huggingface.api/Examples/Scripts/SpeechRecognitionExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Refreshing native plugins compatible for Editor in 1.43 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Script 'Packages/com.huggingface.api/Examples/Scripts/TextToImageExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Script 'Packages/com.huggingface.api/Examples/Scripts/ConversationExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Script 'Packages/com.huggingface.api/Examples/Scripts/SpeechRecognitionExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.682 seconds
-Domain Reload Profiling: 1270ms
-	BeginReloadAssembly (181ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (4ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (45ms)
-	RebuildCommonClasses (35ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (25ms)
-	LoadAllAssembliesAndSetupDomain (335ms)
-		LoadAssemblies (314ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (116ms)
-			TypeCache.Refresh (5ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (105ms)
-			ResolveRequiredComponents (3ms)
-	FinalizeReload (682ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (511ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (2ms)
-			SetLoadedEditorAssemblies (6ms)
-			BeforeProcessingInitializeOnLoad (75ms)
-			ProcessInitializeOnLoadAttributes (388ms)
-			ProcessInitializeOnLoadMethodAttributes (33ms)
-			AfterProcessingInitializeOnLoad (6ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (10ms)
-Refreshing native plugins compatible for Editor in 1.85 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3242 unused Assets / (0.9 MB). Loaded Objects now: 3834.
-Memory consumption went from 114.3 MB to 113.4 MB.
-Total: 6.797700 ms (FindLiveObjects: 0.358700 ms CreateObjectMapping: 0.410500 ms MarkObjects: 5.069000 ms  DeleteObjects: 0.958200 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 1.54 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3231 unused Assets / (0.7 MB). Loaded Objects now: 3834.
-Memory consumption went from 114.5 MB to 113.7 MB.
-Total: 5.977500 ms (FindLiveObjects: 0.341400 ms CreateObjectMapping: 0.196100 ms MarkObjects: 4.587400 ms  DeleteObjects: 0.851700 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Script 'Packages/com.huggingface.api/Examples/Scripts/TextToImageExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Script 'Packages/com.huggingface.api/Examples/Scripts/ConversationExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Script 'Packages/com.huggingface.api/Examples/Scripts/SpeechRecognitionExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Script 'Packages/com.huggingface.api/Examples/Scripts/TextToImageExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Script 'Packages/com.huggingface.api/Examples/Scripts/ConversationExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Script 'Packages/com.huggingface.api/Examples/Scripts/SpeechRecognitionExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\michi\LLM_API_Client_Comparison\LlmApiClientsComparison\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\michi\LLM_API_Client_Comparison\LlmApiClientsComparison\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.612 seconds
-Script 'Packages/com.huggingface.api/Examples/Scripts/TextToImageExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Script 'Packages/com.huggingface.api/Examples/Scripts/ConversationExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Script 'Packages/com.huggingface.api/Examples/Scripts/SpeechRecognitionExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Refreshing native plugins compatible for Editor in 2.23 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Script 'Packages/com.huggingface.api/Examples/Scripts/TextToImageExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Script 'Packages/com.huggingface.api/Examples/Scripts/ConversationExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Script 'Packages/com.huggingface.api/Examples/Scripts/SpeechRecognitionExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.624 seconds
-Domain Reload Profiling: 1234ms
-	BeginReloadAssembly (176ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (45ms)
-	RebuildCommonClasses (31ms)
-	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (25ms)
-	LoadAllAssembliesAndSetupDomain (368ms)
-		LoadAssemblies (344ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (111ms)
-			TypeCache.Refresh (7ms)
-				TypeCache.ScanAssembly (1ms)
-			BuildScriptInfoCaches (98ms)
-			ResolveRequiredComponents (3ms)
-	FinalizeReload (624ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (459ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (2ms)
-			SetLoadedEditorAssemblies (5ms)
-			BeforeProcessingInitializeOnLoad (64ms)
-			ProcessInitializeOnLoadAttributes (350ms)
+			ProcessInitializeOnLoadAttributes (412ms)
 			ProcessInitializeOnLoadMethodAttributes (31ms)
 			AfterProcessingInitializeOnLoad (6ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (9ms)
-Refreshing native plugins compatible for Editor in 1.58 ms, found 4 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Refreshing native plugins compatible for Editor in 1.98 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 24 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3244 unused Assets / (1.1 MB). Loaded Objects now: 3828.
+Memory consumption went from 107.9 MB to 106.9 MB.
+Total: 6.462600 ms (FindLiveObjects: 0.352400 ms CreateObjectMapping: 0.461500 ms MarkObjects: 4.570400 ms  DeleteObjects: 1.077300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1282158.022632 seconds.
+  path: Assets/Scenes/LlmUnity/MazeNavigation/MazeNavigationScene.unity
+  artifactKey: Guid(e12157417b66b424196ed2a860255979) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/LlmUnity/MazeNavigation/MazeNavigationScene.unity using Guid(e12157417b66b424196ed2a860255979) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '942a81849dc01b15cbcd72873a18feb0') in 0.0068899 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.169510 seconds.
+  path: Assets/Scenes/LlmUnity/DiscussionScene/DiscussionScene.unity
+  artifactKey: Guid(549c2c2549a59f24ea52734ff312eef4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/LlmUnity/DiscussionScene/DiscussionScene.unity using Guid(549c2c2549a59f24ea52734ff312eef4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'abd2fe4b380514dcc8ce67a97897c575') in 0.0007476 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 35.542296 seconds.
+  path: Assets/Scenes/HuggingFaceApi/MazeNavigation/MazeNavigationScene.unity
+  artifactKey: Guid(e6f9428a9e9f3fb45ae82ae9ee1f8dd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/HuggingFaceApi/MazeNavigation/MazeNavigationScene.unity using Guid(e6f9428a9e9f3fb45ae82ae9ee1f8dd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '95d9cdd8254ade270d65fe60f3414edc') in 0.00067 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.467450 seconds.
+  path: Assets/Scenes/LlmUnity/DiscussionScene/DiscussionScene.unity
+  artifactKey: Guid(549c2c2549a59f24ea52734ff312eef4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/LlmUnity/DiscussionScene/DiscussionScene.unity using Guid(549c2c2549a59f24ea52734ff312eef4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '51273e8c8e4d415126fcee2348144352') in 0.0005104 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.962684 seconds.
+  path: Assets/Scenes/LlmUnity/MazeNavigation/MazeNavigationScene.unity
+  artifactKey: Guid(e12157417b66b424196ed2a860255979) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/LlmUnity/MazeNavigation/MazeNavigationScene.unity using Guid(e12157417b66b424196ed2a860255979) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4a42ab88bbf0008bb4141d379bb276c0') in 0.0005932 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.339436 seconds.
+  path: Assets/Scenes/LlmUnity/MazeNavigation/Floor2.mat
+  artifactKey: Guid(a5526fda9ee2e92408a86f1875241f46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/LlmUnity/MazeNavigation/Floor2.mat using Guid(a5526fda9ee2e92408a86f1875241f46) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dc355955c2fad0c750dd9e2bafa1ea5a') in 0.1210234 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.610204 seconds.
+  path: Assets/Scenes/HuggingFaceApi/MazeNavigation/Floor.mat
+  artifactKey: Guid(ced33e9c20129b0468a552cd330c012d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/HuggingFaceApi/MazeNavigation/Floor.mat using Guid(ced33e9c20129b0468a552cd330c012d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2dc78c50276ad803ec1deef913215a4c') in 0.0133669 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Prepare
+Script 'Packages/com.huggingface.api/Examples/Scripts/TextToImageExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Script 'Packages/com.huggingface.api/Examples/Scripts/ConversationExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Script 'Packages/com.huggingface.api/Examples/Scripts/SpeechRecognitionExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Script 'Packages/com.huggingface.api/Examples/Scripts/TextToImageExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Script 'Packages/com.huggingface.api/Examples/Scripts/ConversationExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Script 'Packages/com.huggingface.api/Examples/Scripts/SpeechRecognitionExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\michi\LLM_API_Client_Comparison\LlmApiClientsComparison\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\michi\LLM_API_Client_Comparison\LlmApiClientsComparison\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.578 seconds
+Script 'Packages/com.huggingface.api/Examples/Scripts/TextToImageExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Script 'Packages/com.huggingface.api/Examples/Scripts/ConversationExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Script 'Packages/com.huggingface.api/Examples/Scripts/SpeechRecognitionExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Refreshing native plugins compatible for Editor in 1.45 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Script 'Packages/com.huggingface.api/Examples/Scripts/TextToImageExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Script 'Packages/com.huggingface.api/Examples/Scripts/ConversationExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Script 'Packages/com.huggingface.api/Examples/Scripts/SpeechRecognitionExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.692 seconds
+Domain Reload Profiling: 1269ms
+	BeginReloadAssembly (182ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (46ms)
+	RebuildCommonClasses (34ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (25ms)
+	LoadAllAssembliesAndSetupDomain (325ms)
+		LoadAssemblies (307ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (111ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (100ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (693ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (507ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (75ms)
+			ProcessInitializeOnLoadAttributes (385ms)
+			ProcessInitializeOnLoadMethodAttributes (32ms)
+			AfterProcessingInitializeOnLoad (7ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
+Refreshing native plugins compatible for Editor in 1.53 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3242 unused Assets / (1.0 MB). Loaded Objects now: 3835.
-Memory consumption went from 116.2 MB to 115.2 MB.
-Total: 5.585400 ms (FindLiveObjects: 0.337300 ms CreateObjectMapping: 0.196800 ms MarkObjects: 3.916900 ms  DeleteObjects: 1.133200 ms)
+Unloading 3242 unused Assets / (0.8 MB). Loaded Objects now: 3871.
+Memory consumption went from 105.6 MB to 104.8 MB.
+Total: 6.181600 ms (FindLiveObjects: 0.327700 ms CreateObjectMapping: 0.359900 ms MarkObjects: 4.672100 ms  DeleteObjects: 0.820800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Script 'Packages/com.huggingface.api/Examples/Scripts/TextToImageExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Script 'Packages/com.huggingface.api/Examples/Scripts/ConversationExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Script 'Packages/com.huggingface.api/Examples/Scripts/SpeechRecognitionExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Script 'Packages/com.huggingface.api/Examples/Scripts/TextToImageExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Script 'Packages/com.huggingface.api/Examples/Scripts/ConversationExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Script 'Packages/com.huggingface.api/Examples/Scripts/SpeechRecognitionExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\michi\LLM_API_Client_Comparison\LlmApiClientsComparison\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\michi\LLM_API_Client_Comparison\LlmApiClientsComparison\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  5.086 seconds
+Script 'Packages/com.huggingface.api/Examples/Scripts/TextToImageExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Script 'Packages/com.huggingface.api/Examples/Scripts/ConversationExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Script 'Packages/com.huggingface.api/Examples/Scripts/SpeechRecognitionExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Refreshing native plugins compatible for Editor in 7.92 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Script 'Packages/com.huggingface.api/Examples/Scripts/TextToImageExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Script 'Packages/com.huggingface.api/Examples/Scripts/ConversationExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Script 'Packages/com.huggingface.api/Examples/Scripts/SpeechRecognitionExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.011 seconds
+Domain Reload Profiling: 6098ms
+	BeginReloadAssembly (229ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (9ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (60ms)
+	RebuildCommonClasses (36ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (38ms)
+	LoadAllAssembliesAndSetupDomain (4765ms)
+		LoadAssemblies (4555ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (321ms)
+			TypeCache.Refresh (33ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (272ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (1012ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (735ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (8ms)
+			BeforeProcessingInitializeOnLoad (99ms)
+			ProcessInitializeOnLoadAttributes (566ms)
+			ProcessInitializeOnLoadMethodAttributes (50ms)
+			AfterProcessingInitializeOnLoad (8ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (14ms)
+Refreshing native plugins compatible for Editor in 2.42 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3242 unused Assets / (320.5 KB). Loaded Objects now: 3872.
+Memory consumption went from 107.5 MB to 107.2 MB.
+Total: 12.087000 ms (FindLiveObjects: 0.920000 ms CreateObjectMapping: 1.007100 ms MarkObjects: 8.768900 ms  DeleteObjects: 1.387300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Script 'Packages/com.huggingface.api/Examples/Scripts/TextToImageExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Script 'Packages/com.huggingface.api/Examples/Scripts/ConversationExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Script 'Packages/com.huggingface.api/Examples/Scripts/SpeechRecognitionExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Script 'Packages/com.huggingface.api/Examples/Scripts/TextToImageExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Script 'Packages/com.huggingface.api/Examples/Scripts/ConversationExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Script 'Packages/com.huggingface.api/Examples/Scripts/SpeechRecognitionExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\michi\LLM_API_Client_Comparison\LlmApiClientsComparison\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\michi\LLM_API_Client_Comparison\LlmApiClientsComparison\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  1.049 seconds
+Script 'Packages/com.huggingface.api/Examples/Scripts/TextToImageExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Script 'Packages/com.huggingface.api/Examples/Scripts/ConversationExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Script 'Packages/com.huggingface.api/Examples/Scripts/SpeechRecognitionExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Refreshing native plugins compatible for Editor in 2.73 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Script 'Packages/com.huggingface.api/Examples/Scripts/TextToImageExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Script 'Packages/com.huggingface.api/Examples/Scripts/ConversationExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Script 'Packages/com.huggingface.api/Examples/Scripts/SpeechRecognitionExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.227 seconds
+Domain Reload Profiling: 2277ms
+	BeginReloadAssembly (316ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (14ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (107ms)
+	RebuildCommonClasses (39ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (30ms)
+	LoadAllAssembliesAndSetupDomain (652ms)
+		LoadAssemblies (562ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (214ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (194ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (1228ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (943ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (10ms)
+			BeforeProcessingInitializeOnLoad (146ms)
+			ProcessInitializeOnLoadAttributes (724ms)
+			ProcessInitializeOnLoadMethodAttributes (51ms)
+			AfterProcessingInitializeOnLoad (9ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (13ms)
+Refreshing native plugins compatible for Editor in 2.35 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3242 unused Assets / (1.1 MB). Loaded Objects now: 3873.
+Memory consumption went from 109.4 MB to 108.4 MB.
+Total: 10.707600 ms (FindLiveObjects: 0.600600 ms CreateObjectMapping: 0.627800 ms MarkObjects: 6.659100 ms  DeleteObjects: 2.818700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Script 'Packages/com.huggingface.api/Examples/Scripts/TextToImageExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Script 'Packages/com.huggingface.api/Examples/Scripts/ConversationExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Script 'Packages/com.huggingface.api/Examples/Scripts/SpeechRecognitionExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Script 'Packages/com.huggingface.api/Examples/Scripts/TextToImageExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Script 'Packages/com.huggingface.api/Examples/Scripts/ConversationExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Script 'Packages/com.huggingface.api/Examples/Scripts/SpeechRecognitionExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\michi\LLM_API_Client_Comparison\LlmApiClientsComparison\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\michi\LLM_API_Client_Comparison\LlmApiClientsComparison\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.677 seconds
+Script 'Packages/com.huggingface.api/Examples/Scripts/TextToImageExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Script 'Packages/com.huggingface.api/Examples/Scripts/ConversationExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Script 'Packages/com.huggingface.api/Examples/Scripts/SpeechRecognitionExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Refreshing native plugins compatible for Editor in 2.09 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Script 'Packages/com.huggingface.api/Examples/Scripts/TextToImageExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Script 'Packages/com.huggingface.api/Examples/Scripts/ConversationExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Script 'Packages/com.huggingface.api/Examples/Scripts/SpeechRecognitionExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.829 seconds
+Domain Reload Profiling: 1505ms
+	BeginReloadAssembly (191ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (49ms)
+	RebuildCommonClasses (33ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (28ms)
+	LoadAllAssembliesAndSetupDomain (412ms)
+		LoadAssemblies (356ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (154ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (136ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (829ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (605ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (83ms)
+			ProcessInitializeOnLoadAttributes (461ms)
+			ProcessInitializeOnLoadMethodAttributes (43ms)
+			AfterProcessingInitializeOnLoad (8ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (12ms)
+Refreshing native plugins compatible for Editor in 2.03 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3242 unused Assets / (0.8 MB). Loaded Objects now: 3874.
+Memory consumption went from 111.4 MB to 110.6 MB.
+Total: 7.449500 ms (FindLiveObjects: 0.668600 ms CreateObjectMapping: 0.497200 ms MarkObjects: 5.215400 ms  DeleteObjects: 1.066700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Script 'Packages/com.huggingface.api/Examples/Scripts/TextToImageExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Script 'Packages/com.huggingface.api/Examples/Scripts/ConversationExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Script 'Packages/com.huggingface.api/Examples/Scripts/SpeechRecognitionExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Script 'Packages/com.huggingface.api/Examples/Scripts/TextToImageExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Script 'Packages/com.huggingface.api/Examples/Scripts/ConversationExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Script 'Packages/com.huggingface.api/Examples/Scripts/SpeechRecognitionExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\michi\LLM_API_Client_Comparison\LlmApiClientsComparison\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\michi\LLM_API_Client_Comparison\LlmApiClientsComparison\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.653 seconds
+Script 'Packages/com.huggingface.api/Examples/Scripts/TextToImageExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Script 'Packages/com.huggingface.api/Examples/Scripts/ConversationExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Script 'Packages/com.huggingface.api/Examples/Scripts/SpeechRecognitionExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Refreshing native plugins compatible for Editor in 1.92 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Script 'Packages/com.huggingface.api/Examples/Scripts/TextToImageExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Script 'Packages/com.huggingface.api/Examples/Scripts/ConversationExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Script 'Packages/com.huggingface.api/Examples/Scripts/SpeechRecognitionExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.853 seconds
+Domain Reload Profiling: 1505ms
+	BeginReloadAssembly (189ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (46ms)
+	RebuildCommonClasses (40ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (28ms)
+	LoadAllAssembliesAndSetupDomain (385ms)
+		LoadAssemblies (350ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (136ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (124ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (853ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (611ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (79ms)
+			ProcessInitializeOnLoadAttributes (468ms)
+			ProcessInitializeOnLoadMethodAttributes (47ms)
+			AfterProcessingInitializeOnLoad (7ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (14ms)
+Refreshing native plugins compatible for Editor in 2.27 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3242 unused Assets / (1.0 MB). Loaded Objects now: 3875.
+Memory consumption went from 113.3 MB to 112.4 MB.
+Total: 8.914600 ms (FindLiveObjects: 0.786700 ms CreateObjectMapping: 0.649800 ms MarkObjects: 6.095500 ms  DeleteObjects: 1.380300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Script 'Packages/com.huggingface.api/Examples/Scripts/TextToImageExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Script 'Packages/com.huggingface.api/Examples/Scripts/ConversationExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Script 'Packages/com.huggingface.api/Examples/Scripts/SpeechRecognitionExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Script 'Packages/com.huggingface.api/Examples/Scripts/TextToImageExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Script 'Packages/com.huggingface.api/Examples/Scripts/ConversationExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Script 'Packages/com.huggingface.api/Examples/Scripts/SpeechRecognitionExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\michi\LLM_API_Client_Comparison\LlmApiClientsComparison\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\michi\LLM_API_Client_Comparison\LlmApiClientsComparison\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.621 seconds
+Script 'Packages/com.huggingface.api/Examples/Scripts/TextToImageExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Script 'Packages/com.huggingface.api/Examples/Scripts/ConversationExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Script 'Packages/com.huggingface.api/Examples/Scripts/SpeechRecognitionExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Refreshing native plugins compatible for Editor in 1.97 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Script 'Packages/com.huggingface.api/Examples/Scripts/TextToImageExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Script 'Packages/com.huggingface.api/Examples/Scripts/ConversationExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Script 'Packages/com.huggingface.api/Examples/Scripts/SpeechRecognitionExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.795 seconds
+Domain Reload Profiling: 1416ms
+	BeginReloadAssembly (184ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (49ms)
+	RebuildCommonClasses (36ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (25ms)
+	LoadAllAssembliesAndSetupDomain (359ms)
+		LoadAssemblies (319ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (134ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (123ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (796ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (579ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (83ms)
+			ProcessInitializeOnLoadAttributes (436ms)
+			ProcessInitializeOnLoadMethodAttributes (43ms)
+			AfterProcessingInitializeOnLoad (7ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (10ms)
+Refreshing native plugins compatible for Editor in 2.10 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3242 unused Assets / (0.9 MB). Loaded Objects now: 3876.
+Memory consumption went from 115.2 MB to 114.3 MB.
+Total: 9.523000 ms (FindLiveObjects: 0.685400 ms CreateObjectMapping: 0.973900 ms MarkObjects: 6.423500 ms  DeleteObjects: 1.439100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Script 'Packages/com.huggingface.api/Examples/Scripts/TextToImageExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Script 'Packages/com.huggingface.api/Examples/Scripts/ConversationExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Script 'Packages/com.huggingface.api/Examples/Scripts/SpeechRecognitionExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Script 'Packages/com.huggingface.api/Examples/Scripts/TextToImageExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Script 'Packages/com.huggingface.api/Examples/Scripts/ConversationExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Script 'Packages/com.huggingface.api/Examples/Scripts/SpeechRecognitionExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\michi\LLM_API_Client_Comparison\LlmApiClientsComparison\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\michi\LLM_API_Client_Comparison\LlmApiClientsComparison\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.662 seconds
+Script 'Packages/com.huggingface.api/Examples/Scripts/TextToImageExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Script 'Packages/com.huggingface.api/Examples/Scripts/ConversationExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Script 'Packages/com.huggingface.api/Examples/Scripts/SpeechRecognitionExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Refreshing native plugins compatible for Editor in 1.91 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Script 'Packages/com.huggingface.api/Examples/Scripts/TextToImageExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Script 'Packages/com.huggingface.api/Examples/Scripts/ConversationExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Script 'Packages/com.huggingface.api/Examples/Scripts/SpeechRecognitionExample.cs' will not be compiled because it exists outside the Assets folder and does not to belong to any assembly definition file.
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.850 seconds
+Domain Reload Profiling: 1511ms
+	BeginReloadAssembly (192ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (50ms)
+	RebuildCommonClasses (37ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (28ms)
+	LoadAllAssembliesAndSetupDomain (386ms)
+		LoadAssemblies (334ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (146ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (132ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (851ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (613ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (82ms)
+			ProcessInitializeOnLoadAttributes (468ms)
+			ProcessInitializeOnLoadMethodAttributes (44ms)
+			AfterProcessingInitializeOnLoad (8ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (14ms)
+Refreshing native plugins compatible for Editor in 1.84 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3242 unused Assets / (0.8 MB). Loaded Objects now: 3877.
+Memory consumption went from 117.2 MB to 116.3 MB.
+Total: 7.642300 ms (FindLiveObjects: 0.700500 ms CreateObjectMapping: 0.246400 ms MarkObjects: 5.287500 ms  DeleteObjects: 1.406400 ms)
 
 Prepare: number of updated asset objects reloaded= 0
