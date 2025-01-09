@@ -841,11 +841,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   subjectField: {fileID: 167145905}
   ActionList:
+  - Idle
   - Up
   - Down
   - Left
   - Right
   - Stop
+  - Confused
 --- !u!136 &814771573
 CapsuleCollider:
   m_ObjectHideFlags: 0

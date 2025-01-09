@@ -6,6 +6,7 @@ using HuggingFace.API;
 using UnityEngine.UIElements;
 using System;
 using UnityEditor.VersionControl;
+using LLMUnity;
 
 public class DiscussionInteractionHuggingFace
 {
@@ -16,10 +17,15 @@ public class DiscussionInteractionHuggingFace
     string response;
     public bool StopTalking = false;
 
-    public DiscussionInteractionHuggingFace(string description, Text AIText)
+    string CharacterName;
+
+    DateTime Start;
+
+    public DiscussionInteractionHuggingFace(string description, Text AIText, string characterName)
     {
         this.Description = description;
         this.AIText = AIText;
+        CharacterName = characterName;
     }
 
     public void SetPartner(DiscussionInteractionHuggingFace partner)
@@ -34,10 +40,11 @@ public class DiscussionInteractionHuggingFace
 
     public void StartDiscussion()
     {
-        AIText.text = "...";
+        Start = System.DateTime.Now;
 
-        string inputText = $"{Description}." +
-            $"The subject is {Subject}." +
+        AIText.text = "...";
+        string inputText = $"subject = {Subject}." +
+            $"{Description}." +
             $"What do you think of this subject?";
         HuggingFaceAPI.TextGeneration(inputText, SetAIText, OnError);
     }
@@ -57,6 +64,10 @@ public class DiscussionInteractionHuggingFace
 
     public void AIReplyComplete()
     {
+        TimeSpan deltaTime = System.DateTime.Now - Start;
+        Debug.Log($"Response time : {deltaTime.Seconds} seconds.");
+        Debug.Log($"{CharacterName} : {response}");
+
         if (StopTalking) return;
 
         discussionPartner.ReceiveReply(response);
@@ -64,11 +75,12 @@ public class DiscussionInteractionHuggingFace
 
     public void ReceiveReply(string PartnersResponse)
     {
-        AIText.text = "...";
+        Start = System.DateTime.Now;
 
-        string inputText = $"{Description}." +
-            $"The subject is {Subject}." +
-            $"The last thing they said was {PartnersResponse}.";
+        AIText.text = "...";
+        string inputText = $"subject = {Subject}." + 
+            $"{Description}." +
+            $"The last thing they said was: {PartnersResponse}.";
 
         HuggingFaceAPI.TextGeneration(inputText, SetAIText, OnError);
     }
@@ -93,8 +105,8 @@ public class DiscussionScriptHuggingFace : MonoBehaviour
         subjectField.onSubmit.AddListener(onSubjectFieldSubmit);
 
 
-        interaction1 = new DiscussionInteractionHuggingFace(llmCharacter1_Description, AIText1);
-        interaction2 = new DiscussionInteractionHuggingFace(llmCharacter2_Description, AIText2);
+        interaction1 = new DiscussionInteractionHuggingFace(llmCharacter1_Description, AIText1, "Eve");
+        interaction2 = new DiscussionInteractionHuggingFace(llmCharacter2_Description, AIText2, "Adam");
 
         interaction1.SetPartner(interaction2);
         interaction2.SetPartner(interaction1);

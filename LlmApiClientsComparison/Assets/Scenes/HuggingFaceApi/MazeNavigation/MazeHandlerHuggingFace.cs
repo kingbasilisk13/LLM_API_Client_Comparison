@@ -16,8 +16,11 @@ public class MazeHandlerHuggingFace : MonoBehaviour
     public InputField subjectField;
     public string[] ActionList;
 
-
     private float speed = 1f;
+
+    DateTime StartTime;
+    TimeSpan deltaTime;
+    string Input;
 
     private enum State
     {
@@ -32,7 +35,6 @@ public class MazeHandlerHuggingFace : MonoBehaviour
     
     private State state;
     
-    // Start is called before the first frame update
     void Start()
     {
         subjectField.onSubmit.AddListener(onSubjectFieldSubmit);
@@ -40,6 +42,8 @@ public class MazeHandlerHuggingFace : MonoBehaviour
     }
     public void onSubjectFieldSubmit(string message)
     {
+        Input = message;
+        StartTime = System.DateTime.Now;
         HuggingFaceAPI.SentenceSimilarity(message, FindValues, Error, ActionList);
     }
 
@@ -52,8 +56,6 @@ public class MazeHandlerHuggingFace : MonoBehaviour
             gameObject.transform.forward = direction;
         }
     }
-
-    // Update is called once per frame
     void Update()
     {
         switch (state)
@@ -64,7 +66,6 @@ public class MazeHandlerHuggingFace : MonoBehaviour
 
             case State.Up:
                 MoveNpc(new Vector3(0, 0, 1));
-
                 break;
 
             case State.Down:
@@ -84,6 +85,9 @@ public class MazeHandlerHuggingFace : MonoBehaviour
                 state = State.Idle;
                 break;
 
+            case State.Confused:
+                state = State.Idle;
+                break;
         }
     }
 
@@ -94,6 +98,8 @@ public class MazeHandlerHuggingFace : MonoBehaviour
 
     private void FindValues(float[] list) 
     {
+        deltaTime = System.DateTime.Now - StartTime;
+        
         if (list == null || list.Length == 0)
             throw new ArgumentException("The list cannot be null or empty");
 
@@ -112,7 +118,6 @@ public class MazeHandlerHuggingFace : MonoBehaviour
         Utility(highestValue, highestIndex);
     }
 
-
     public void Utility(float maxScore, int maxScoreIndex) 
     {
         if(maxScore < 0.2f) 
@@ -126,7 +131,8 @@ public class MazeHandlerHuggingFace : MonoBehaviour
 
             state = (State)System.Enum.Parse(typeof(State),verb, true);
             subjectField.text = "";
-
         }
+        Debug.Log($"Response time : {deltaTime.Seconds} seconds.");
+        Debug.Log($"INPUT : {Input} | STATE : {state}");
     }
 }

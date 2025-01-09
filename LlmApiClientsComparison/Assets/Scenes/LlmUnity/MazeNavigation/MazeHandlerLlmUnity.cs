@@ -8,13 +8,10 @@ using UnityEngine.UI;
 public class MazeHandlerLlmUnity : MonoBehaviour
 {
     private CharacterController controller;
-
     public LLMCharacter llmCharacter;
     public InputField subjectField;
-
-    public string[] ActionList;
-
     private float speed = 1f;
+    DateTime StartTime;
 
     private enum State
     {
@@ -29,12 +26,10 @@ public class MazeHandlerLlmUnity : MonoBehaviour
 
     private State state;
 
-    // Start is called before the first frame update
     void Start()
     {
         subjectField.onSubmit.AddListener(onSubjectFieldSubmit);
         controller = gameObject.AddComponent<CharacterController>();
-
     }
 
     string ConstructPrompt(string message)
@@ -49,15 +44,25 @@ public class MazeHandlerLlmUnity : MonoBehaviour
 
     async void onSubjectFieldSubmit(string message)
     {
-        
-        string verb = await llmCharacter.Chat(ConstructPrompt(message));
-        state = (State)System.Enum.Parse(typeof(State), verb, true);
-        subjectField.text = "";
-    }
+        StartTime = System.DateTime.Now;
 
-    public void SetAIText(string text)
-    {
-        Debug.Log(text);
+        string verb = await llmCharacter.Chat(ConstructPrompt(message));
+
+        TimeSpan deltaTime = System.DateTime.Now - StartTime;
+
+        try
+        {
+            state = (State)System.Enum.Parse(typeof(State), verb, true);
+        }
+        catch (Exception e) 
+        {
+            state = State.Confused;
+        }
+        
+        subjectField.text = "";
+
+        Debug.Log($"Response time : {deltaTime.Seconds} seconds.");
+        Debug.Log($"INPUT : {message} | STATE : {state}");
     }
 
     private void MoveNpc(Vector3 direction) 
@@ -70,8 +75,6 @@ public class MazeHandlerLlmUnity : MonoBehaviour
         }
     }
     
-
-    // Update is called once per frame
     void Update()
     {
         switch (state)
@@ -102,6 +105,9 @@ public class MazeHandlerLlmUnity : MonoBehaviour
                 state = State.Idle;
                 break;
 
+            case State.Confused:
+                state = State.Idle;
+                break;
         }
     }
     private void OnApplicationQuit()

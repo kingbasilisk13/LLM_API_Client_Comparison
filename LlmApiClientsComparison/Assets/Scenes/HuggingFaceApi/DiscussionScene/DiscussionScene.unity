@@ -725,13 +725,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   subjectField: {fileID: 1263389454}
-  llmCharacter1_Description: Pretend you are a character. Your name is Eve. You are
-    having a discussion with Adam about a certain subject. You love this subject.
-    Try not to repeat yourself.
+  llmCharacter1_Description: Your name is Eve. You are having a discussion with Adam
+    about a certain subject. You love this subject.
   AIText1: {fileID: 132213872}
-  llmCharacter2_Description: Pretend you are a character.  Your name is Adam. You
-    are having a discussion with Eve about a certain subject. You hate this subject.
-    Try not to repeat yourself.
+  llmCharacter2_Description: Your name is Adam. You are having a discussion with
+    Eve about a certain subject. You hate this subject.
   AIText2: {fileID: 932031743}
 --- !u!4 &1102554244
 Transform:
@@ -1919,8 +1917,8 @@ CanvasRenderer:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 1148837119}
   - {fileID: 1793248165}
+  - {fileID: 1148837119}
+  - {fileID: 1406011244}
   - {fileID: 1291149977}
   - {fileID: 1102554244}
-  - {fileID: 1406011244}

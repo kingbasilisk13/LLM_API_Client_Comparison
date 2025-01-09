@@ -10,17 +10,17 @@ using UnityEditor.VersionControl;
 
 public class DiscussionInteraction
 {
-    string Subject;
-
-    Text AIText;
-    LLMCharacter llmCharacter;
-
-    DiscussionInteraction discussionPartner;
-
-    string response;
-
     public bool StopTalking = false;
 
+    string Subject;
+    
+    Text AIText;
+    LLMCharacter llmCharacter;
+    DiscussionInteraction discussionPartner;
+    string response;
+
+    DateTime Start;
+    
     public DiscussionInteraction(Text AIText, LLMCharacter llmCharacter)
     {
         this.AIText = AIText;
@@ -39,6 +39,7 @@ public class DiscussionInteraction
 
     public void StartDiscussion() 
     {
+        Start = System.DateTime.Now;
         AIText.text = "...";
         _ = llmCharacter.Chat(
             $"What do you think of {Subject}.",
@@ -54,6 +55,10 @@ public class DiscussionInteraction
 
     public void AIReplyComplete()
     {
+        TimeSpan deltaTime = System.DateTime.Now - Start;
+        Debug.Log($"Response time : {deltaTime.Seconds} seconds.");
+        Debug.Log($"{llmCharacter.AIName} : {response}");
+
         if (StopTalking) return;
 
         discussionPartner.ReceiveReply(response);
@@ -61,6 +66,7 @@ public class DiscussionInteraction
 
     public void ReceiveReply(string PartnersResponse) 
     {
+        Start = System.DateTime.Now;
         AIText.text = "...";
         _ = llmCharacter.Chat(
             PartnersResponse,
