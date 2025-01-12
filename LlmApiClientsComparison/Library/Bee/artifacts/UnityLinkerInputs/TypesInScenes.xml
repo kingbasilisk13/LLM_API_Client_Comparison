@@ -1,8 +1,5 @@
 <linker>
 	<assembly fullname="Assembly-CSharp">
-		<type fullname="DiscussionScriptHuggingFace" preserve="nothing"/>
-		<type fullname="DiscussionScriptLLMUnity" preserve="nothing"/>
-		<type fullname="MazeHandlerHuggingFace" preserve="nothing"/>
 		<type fullname="MazeHandlerLlmUnity" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="HuggingFaceAPI">
@@ -54,7 +51,6 @@
 		<type fullname="UnityEngine.RectTransform" preserve="nothing"/>
 		<type fullname="UnityEngine.Renderer" preserve="nothing"/>
 		<type fullname="UnityEngine.Rendering.GraphicsSettings" preserve="nothing"/>
-		<type fullname="UnityEngine.Rendering.SortingGroup" preserve="nothing"/>
 		<type fullname="UnityEngine.RenderSettings" preserve="nothing"/>
 		<type fullname="UnityEngine.Shader" preserve="nothing"/>
 		<type fullname="UnityEngine.Sprite" preserve="nothing"/>
@@ -66,7 +62,6 @@
 	<assembly fullname="UnityEngine.UI">
 		<type fullname="UnityEngine.EventSystems.EventSystem" preserve="nothing"/>
 		<type fullname="UnityEngine.EventSystems.StandaloneInputModule" preserve="nothing"/>
-		<type fullname="UnityEngine.UI.Button" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.CanvasScaler" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.GraphicRaycaster" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.Image" preserve="nothing"/>

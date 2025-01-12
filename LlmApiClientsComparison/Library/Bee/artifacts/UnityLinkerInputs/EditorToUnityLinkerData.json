@@ -16,28 +16,11 @@
             "usedInScenes": []
         },
         {
-            "managedAssemblyName": "Assembly-CSharp.dll",
-            "nativeClass": "",
-            "fullManagedTypeName": "DiscussionScriptHuggingFace",
-            "moduleName": "",
-            "usedInScenes": []
-        },
-        {
-            "managedAssemblyName": "Assembly-CSharp.dll",
-            "nativeClass": "",
-            "fullManagedTypeName": "DiscussionScriptLLMUnity",
-            "moduleName": "",
-            "usedInScenes": []
-        },
-        {
             "managedAssemblyName": "",
             "nativeClass": "EditorExtension",
             "fullManagedTypeName": "",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/HuggingFaceApi/DiscussionScene/DiscussionScene.unity",
-                "Assets/Scenes/HuggingFaceApi/MazeNavigation/MazeNavigationScene.unity",
-                "Assets/Scenes/LlmUnity/DiscussionScene/DiscussionScene.unity",
                 "Assets/Scenes/LlmUnity/MazeNavigation/MazeNavigationScene.unity"
             ]
         },
@@ -47,9 +30,6 @@
             "fullManagedTypeName": "",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/HuggingFaceApi/DiscussionScene/DiscussionScene.unity",
-                "Assets/Scenes/HuggingFaceApi/MazeNavigation/MazeNavigationScene.unity",
-                "Assets/Scenes/LlmUnity/DiscussionScene/DiscussionScene.unity",
                 "Assets/Scenes/LlmUnity/MazeNavigation/MazeNavigationScene.unity"
             ]
         },
@@ -73,9 +53,6 @@
             "fullManagedTypeName": "",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/HuggingFaceApi/DiscussionScene/DiscussionScene.unity",
-                "Assets/Scenes/HuggingFaceApi/MazeNavigation/MazeNavigationScene.unity",
-                "Assets/Scenes/LlmUnity/DiscussionScene/DiscussionScene.unity",
                 "Assets/Scenes/LlmUnity/MazeNavigation/MazeNavigationScene.unity"
             ]
         },
@@ -90,13 +67,6 @@
             "managedAssemblyName": "undream.llmunity.Runtime.dll",
             "nativeClass": "",
             "fullManagedTypeName": "LLMUnity.LLMCharacter",
-            "moduleName": "",
-            "usedInScenes": []
-        },
-        {
-            "managedAssemblyName": "Assembly-CSharp.dll",
-            "nativeClass": "",
-            "fullManagedTypeName": "MazeHandlerHuggingFace",
             "moduleName": "",
             "usedInScenes": []
         },
@@ -120,9 +90,6 @@
             "fullManagedTypeName": "",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/HuggingFaceApi/DiscussionScene/DiscussionScene.unity",
-                "Assets/Scenes/HuggingFaceApi/MazeNavigation/MazeNavigationScene.unity",
-                "Assets/Scenes/LlmUnity/DiscussionScene/DiscussionScene.unity",
                 "Assets/Scenes/LlmUnity/MazeNavigation/MazeNavigationScene.unity"
             ]
         },
@@ -139,9 +106,6 @@
             "fullManagedTypeName": "",
             "moduleName": "AI",
             "usedInScenes": [
-                "Assets/Scenes/HuggingFaceApi/DiscussionScene/DiscussionScene.unity",
-                "Assets/Scenes/HuggingFaceApi/MazeNavigation/MazeNavigationScene.unity",
-                "Assets/Scenes/LlmUnity/DiscussionScene/DiscussionScene.unity",
                 "Assets/Scenes/LlmUnity/MazeNavigation/MazeNavigationScene.unity"
             ]
         },
@@ -228,9 +192,6 @@
             "fullManagedTypeName": "UnityEditor.MonoScript",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/HuggingFaceApi/DiscussionScene/DiscussionScene.unity",
-                "Assets/Scenes/HuggingFaceApi/MazeNavigation/MazeNavigationScene.unity",
-                "Assets/Scenes/LlmUnity/DiscussionScene/DiscussionScene.unity",
                 "Assets/Scenes/LlmUnity/MazeNavigation/MazeNavigationScene.unity"
             ]
         },
@@ -282,9 +243,6 @@
             "fullManagedTypeName": "UnityEngine.AudioBehaviour",
             "moduleName": "Audio",
             "usedInScenes": [
-                "Assets/Scenes/HuggingFaceApi/DiscussionScene/DiscussionScene.unity",
-                "Assets/Scenes/HuggingFaceApi/MazeNavigation/MazeNavigationScene.unity",
-                "Assets/Scenes/LlmUnity/DiscussionScene/DiscussionScene.unity",
                 "Assets/Scenes/LlmUnity/MazeNavigation/MazeNavigationScene.unity"
             ]
         },
@@ -294,9 +252,6 @@
             "fullManagedTypeName": "UnityEngine.AudioListener",
             "moduleName": "Audio",
             "usedInScenes": [
-                "Assets/Scenes/HuggingFaceApi/DiscussionScene/DiscussionScene.unity",
-                "Assets/Scenes/HuggingFaceApi/MazeNavigation/MazeNavigationScene.unity",
-                "Assets/Scenes/LlmUnity/DiscussionScene/DiscussionScene.unity",
                 "Assets/Scenes/LlmUnity/MazeNavigation/MazeNavigationScene.unity"
             ]
         },
@@ -306,9 +261,6 @@
             "fullManagedTypeName": "UnityEngine.Behaviour",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/HuggingFaceApi/DiscussionScene/DiscussionScene.unity",
-                "Assets/Scenes/HuggingFaceApi/MazeNavigation/MazeNavigationScene.unity",
-                "Assets/Scenes/LlmUnity/DiscussionScene/DiscussionScene.unity",
                 "Assets/Scenes/LlmUnity/MazeNavigation/MazeNavigationScene.unity"
             ]
         },
@@ -318,7 +270,6 @@
             "fullManagedTypeName": "UnityEngine.BoxCollider",
             "moduleName": "Physics",
             "usedInScenes": [
-                "Assets/Scenes/HuggingFaceApi/MazeNavigation/MazeNavigationScene.unity",
                 "Assets/Scenes/LlmUnity/MazeNavigation/MazeNavigationScene.unity"
             ]
         },
@@ -328,9 +279,6 @@
             "fullManagedTypeName": "UnityEngine.Camera",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/HuggingFaceApi/DiscussionScene/DiscussionScene.unity",
-                "Assets/Scenes/HuggingFaceApi/MazeNavigation/MazeNavigationScene.unity",
-                "Assets/Scenes/LlmUnity/DiscussionScene/DiscussionScene.unity",
                 "Assets/Scenes/LlmUnity/MazeNavigation/MazeNavigationScene.unity"
             ]
         },
@@ -340,9 +288,6 @@
             "fullManagedTypeName": "UnityEngine.Canvas",
             "moduleName": "UI",
             "usedInScenes": [
-                "Assets/Scenes/HuggingFaceApi/DiscussionScene/DiscussionScene.unity",
-                "Assets/Scenes/HuggingFaceApi/MazeNavigation/MazeNavigationScene.unity",
-                "Assets/Scenes/LlmUnity/DiscussionScene/DiscussionScene.unity",
                 "Assets/Scenes/LlmUnity/MazeNavigation/MazeNavigationScene.unity"
             ]
         },
@@ -352,9 +297,6 @@
             "fullManagedTypeName": "UnityEngine.CanvasRenderer",
             "moduleName": "UI",
             "usedInScenes": [
-                "Assets/Scenes/HuggingFaceApi/DiscussionScene/DiscussionScene.unity",
-                "Assets/Scenes/HuggingFaceApi/MazeNavigation/MazeNavigationScene.unity",
-                "Assets/Scenes/LlmUnity/DiscussionScene/DiscussionScene.unity",
                 "Assets/Scenes/LlmUnity/MazeNavigation/MazeNavigationScene.unity"
             ]
         },
@@ -364,7 +306,6 @@
             "fullManagedTypeName": "UnityEngine.CapsuleCollider",
             "moduleName": "Physics",
             "usedInScenes": [
-                "Assets/Scenes/HuggingFaceApi/MazeNavigation/MazeNavigationScene.unity",
                 "Assets/Scenes/LlmUnity/MazeNavigation/MazeNavigationScene.unity"
             ]
         },
@@ -374,7 +315,6 @@
             "fullManagedTypeName": "UnityEngine.Collider",
             "moduleName": "Physics",
             "usedInScenes": [
-                "Assets/Scenes/HuggingFaceApi/MazeNavigation/MazeNavigationScene.unity",
                 "Assets/Scenes/LlmUnity/MazeNavigation/MazeNavigationScene.unity"
             ]
         },
@@ -384,9 +324,6 @@
             "fullManagedTypeName": "UnityEngine.Component",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/HuggingFaceApi/DiscussionScene/DiscussionScene.unity",
-                "Assets/Scenes/HuggingFaceApi/MazeNavigation/MazeNavigationScene.unity",
-                "Assets/Scenes/LlmUnity/DiscussionScene/DiscussionScene.unity",
                 "Assets/Scenes/LlmUnity/MazeNavigation/MazeNavigationScene.unity"
             ]
         },
@@ -396,9 +333,6 @@
             "fullManagedTypeName": "UnityEngine.Cubemap",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/HuggingFaceApi/DiscussionScene/DiscussionScene.unity",
-                "Assets/Scenes/HuggingFaceApi/MazeNavigation/MazeNavigationScene.unity",
-                "Assets/Scenes/LlmUnity/DiscussionScene/DiscussionScene.unity",
                 "Assets/Scenes/LlmUnity/MazeNavigation/MazeNavigationScene.unity"
             ]
         },
@@ -422,9 +356,6 @@
             "fullManagedTypeName": "UnityEngine.Font",
             "moduleName": "TextRendering",
             "usedInScenes": [
-                "Assets/Scenes/HuggingFaceApi/DiscussionScene/DiscussionScene.unity",
-                "Assets/Scenes/HuggingFaceApi/MazeNavigation/MazeNavigationScene.unity",
-                "Assets/Scenes/LlmUnity/DiscussionScene/DiscussionScene.unity",
                 "Assets/Scenes/LlmUnity/MazeNavigation/MazeNavigationScene.unity"
             ]
         },
@@ -434,9 +365,6 @@
             "fullManagedTypeName": "UnityEngine.GameObject",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/HuggingFaceApi/DiscussionScene/DiscussionScene.unity",
-                "Assets/Scenes/HuggingFaceApi/MazeNavigation/MazeNavigationScene.unity",
-                "Assets/Scenes/LlmUnity/DiscussionScene/DiscussionScene.unity",
                 "Assets/Scenes/LlmUnity/MazeNavigation/MazeNavigationScene.unity"
             ]
         },
@@ -446,9 +374,6 @@
             "fullManagedTypeName": "UnityEngine.Light",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/HuggingFaceApi/DiscussionScene/DiscussionScene.unity",
-                "Assets/Scenes/HuggingFaceApi/MazeNavigation/MazeNavigationScene.unity",
-                "Assets/Scenes/LlmUnity/DiscussionScene/DiscussionScene.unity",
                 "Assets/Scenes/LlmUnity/MazeNavigation/MazeNavigationScene.unity"
             ]
         },
@@ -458,9 +383,6 @@
             "fullManagedTypeName": "UnityEngine.LightmapSettings",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/HuggingFaceApi/DiscussionScene/DiscussionScene.unity",
-                "Assets/Scenes/HuggingFaceApi/MazeNavigation/MazeNavigationScene.unity",
-                "Assets/Scenes/LlmUnity/DiscussionScene/DiscussionScene.unity",
                 "Assets/Scenes/LlmUnity/MazeNavigation/MazeNavigationScene.unity"
             ]
         },
@@ -470,9 +392,6 @@
             "fullManagedTypeName": "UnityEngine.Material",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/HuggingFaceApi/DiscussionScene/DiscussionScene.unity",
-                "Assets/Scenes/HuggingFaceApi/MazeNavigation/MazeNavigationScene.unity",
-                "Assets/Scenes/LlmUnity/DiscussionScene/DiscussionScene.unity",
                 "Assets/Scenes/LlmUnity/MazeNavigation/MazeNavigationScene.unity"
             ]
         },
@@ -482,7 +401,6 @@
             "fullManagedTypeName": "UnityEngine.Mesh",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/HuggingFaceApi/MazeNavigation/MazeNavigationScene.unity",
                 "Assets/Scenes/LlmUnity/MazeNavigation/MazeNavigationScene.unity"
             ]
         },
@@ -492,7 +410,6 @@
             "fullManagedTypeName": "UnityEngine.MeshFilter",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/HuggingFaceApi/MazeNavigation/MazeNavigationScene.unity",
                 "Assets/Scenes/LlmUnity/MazeNavigation/MazeNavigationScene.unity"
             ]
         },
@@ -502,7 +419,6 @@
             "fullManagedTypeName": "UnityEngine.MeshRenderer",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/HuggingFaceApi/MazeNavigation/MazeNavigationScene.unity",
                 "Assets/Scenes/LlmUnity/MazeNavigation/MazeNavigationScene.unity"
             ]
         },
@@ -512,9 +428,6 @@
             "fullManagedTypeName": "UnityEngine.MonoBehaviour",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/HuggingFaceApi/DiscussionScene/DiscussionScene.unity",
-                "Assets/Scenes/HuggingFaceApi/MazeNavigation/MazeNavigationScene.unity",
-                "Assets/Scenes/LlmUnity/DiscussionScene/DiscussionScene.unity",
                 "Assets/Scenes/LlmUnity/MazeNavigation/MazeNavigationScene.unity"
             ]
         },
@@ -524,9 +437,6 @@
             "fullManagedTypeName": "UnityEngine.Object",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/HuggingFaceApi/DiscussionScene/DiscussionScene.unity",
-                "Assets/Scenes/HuggingFaceApi/MazeNavigation/MazeNavigationScene.unity",
-                "Assets/Scenes/LlmUnity/DiscussionScene/DiscussionScene.unity",
                 "Assets/Scenes/LlmUnity/MazeNavigation/MazeNavigationScene.unity"
             ]
         },
@@ -543,9 +453,6 @@
             "fullManagedTypeName": "UnityEngine.RectTransform",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/HuggingFaceApi/DiscussionScene/DiscussionScene.unity",
-                "Assets/Scenes/HuggingFaceApi/MazeNavigation/MazeNavigationScene.unity",
-                "Assets/Scenes/LlmUnity/DiscussionScene/DiscussionScene.unity",
                 "Assets/Scenes/LlmUnity/MazeNavigation/MazeNavigationScene.unity"
             ]
         },
@@ -555,7 +462,6 @@
             "fullManagedTypeName": "UnityEngine.Renderer",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/HuggingFaceApi/MazeNavigation/MazeNavigationScene.unity",
                 "Assets/Scenes/LlmUnity/MazeNavigation/MazeNavigationScene.unity"
             ]
         },
@@ -568,23 +474,10 @@
         },
         {
             "managedAssemblyName": "UnityEngine.dll",
-            "nativeClass": "SortingGroup",
-            "fullManagedTypeName": "UnityEngine.Rendering.SortingGroup",
-            "moduleName": "Core",
-            "usedInScenes": [
-                "Assets/Scenes/HuggingFaceApi/DiscussionScene/DiscussionScene.unity",
-                "Assets/Scenes/LlmUnity/DiscussionScene/DiscussionScene.unity"
-            ]
-        },
-        {
-            "managedAssemblyName": "UnityEngine.dll",
             "nativeClass": "RenderSettings",
             "fullManagedTypeName": "UnityEngine.RenderSettings",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/HuggingFaceApi/DiscussionScene/DiscussionScene.unity",
-                "Assets/Scenes/HuggingFaceApi/MazeNavigation/MazeNavigationScene.unity",
-                "Assets/Scenes/LlmUnity/DiscussionScene/DiscussionScene.unity",
                 "Assets/Scenes/LlmUnity/MazeNavigation/MazeNavigationScene.unity"
             ]
         },
@@ -594,9 +487,6 @@
             "fullManagedTypeName": "UnityEngine.Shader",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/HuggingFaceApi/DiscussionScene/DiscussionScene.unity",
-                "Assets/Scenes/HuggingFaceApi/MazeNavigation/MazeNavigationScene.unity",
-                "Assets/Scenes/LlmUnity/DiscussionScene/DiscussionScene.unity",
                 "Assets/Scenes/LlmUnity/MazeNavigation/MazeNavigationScene.unity"
             ]
         },
@@ -606,9 +496,6 @@
             "fullManagedTypeName": "UnityEngine.Sprite",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/HuggingFaceApi/DiscussionScene/DiscussionScene.unity",
-                "Assets/Scenes/HuggingFaceApi/MazeNavigation/MazeNavigationScene.unity",
-                "Assets/Scenes/LlmUnity/DiscussionScene/DiscussionScene.unity",
                 "Assets/Scenes/LlmUnity/MazeNavigation/MazeNavigationScene.unity"
             ]
         },
@@ -618,9 +505,6 @@
             "fullManagedTypeName": "UnityEngine.TextAsset",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/HuggingFaceApi/DiscussionScene/DiscussionScene.unity",
-                "Assets/Scenes/HuggingFaceApi/MazeNavigation/MazeNavigationScene.unity",
-                "Assets/Scenes/LlmUnity/DiscussionScene/DiscussionScene.unity",
                 "Assets/Scenes/LlmUnity/MazeNavigation/MazeNavigationScene.unity"
             ]
         },
@@ -630,9 +514,6 @@
             "fullManagedTypeName": "UnityEngine.Texture",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/HuggingFaceApi/DiscussionScene/DiscussionScene.unity",
-                "Assets/Scenes/HuggingFaceApi/MazeNavigation/MazeNavigationScene.unity",
-                "Assets/Scenes/LlmUnity/DiscussionScene/DiscussionScene.unity",
                 "Assets/Scenes/LlmUnity/MazeNavigation/MazeNavigationScene.unity"
             ]
         },
@@ -642,9 +523,6 @@
             "fullManagedTypeName": "UnityEngine.Texture2D",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/HuggingFaceApi/DiscussionScene/DiscussionScene.unity",
-                "Assets/Scenes/HuggingFaceApi/MazeNavigation/MazeNavigationScene.unity",
-                "Assets/Scenes/LlmUnity/DiscussionScene/DiscussionScene.unity",
                 "Assets/Scenes/LlmUnity/MazeNavigation/MazeNavigationScene.unity"
             ]
         },
@@ -654,18 +532,8 @@
             "fullManagedTypeName": "UnityEngine.Transform",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/HuggingFaceApi/DiscussionScene/DiscussionScene.unity",
-                "Assets/Scenes/HuggingFaceApi/MazeNavigation/MazeNavigationScene.unity",
-                "Assets/Scenes/LlmUnity/DiscussionScene/DiscussionScene.unity",
                 "Assets/Scenes/LlmUnity/MazeNavigation/MazeNavigationScene.unity"
             ]
-        },
-        {
-            "managedAssemblyName": "UnityEngine.UI.dll",
-            "nativeClass": "",
-            "fullManagedTypeName": "UnityEngine.UI.Button",
-            "moduleName": "",
-            "usedInScenes": []
         },
         {
             "managedAssemblyName": "UnityEngine.UI.dll",

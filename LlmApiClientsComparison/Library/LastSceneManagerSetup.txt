@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/HuggingFaceApi/MazeNavigation/MazeNavigationScene.unity
+- path: Assets/Scenes/LlmUnity/MazeNavigation/MazeNavigationScene.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

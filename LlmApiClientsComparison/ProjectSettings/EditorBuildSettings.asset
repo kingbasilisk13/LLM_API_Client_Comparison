@@ -8,14 +8,5 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LlmUnity/MazeNavigation/MazeNavigationScene.unity
     guid: e12157417b66b424196ed2a860255979
-  - enabled: 1
-    path: Assets/Scenes/LlmUnity/DiscussionScene/DiscussionScene.unity
-    guid: 549c2c2549a59f24ea52734ff312eef4
-  - enabled: 1
-    path: Assets/Scenes/HuggingFaceApi/MazeNavigation/MazeNavigationScene.unity
-    guid: e6f9428a9e9f3fb45ae82ae9ee1f8dd5
-  - enabled: 1
-    path: Assets/Scenes/HuggingFaceApi/DiscussionScene/DiscussionScene.unity
-    guid: 065239ddfb818654e809e8432c235546
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
