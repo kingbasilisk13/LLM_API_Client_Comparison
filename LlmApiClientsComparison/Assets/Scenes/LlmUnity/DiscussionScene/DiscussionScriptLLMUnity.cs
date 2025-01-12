@@ -1,12 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using LLMUnity;
 using UnityEngine.UI;
-using LLMUnitySamples;
 using System;
-using UnityEditor.VersionControl;
-
 
 public class DiscussionInteraction
 {

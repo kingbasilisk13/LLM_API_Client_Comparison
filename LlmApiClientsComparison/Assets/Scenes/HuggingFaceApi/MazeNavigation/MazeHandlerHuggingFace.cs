@@ -1,13 +1,7 @@
 using HuggingFace.API;
-using NUnit.Framework;
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.UI;
 using UnityEngine;
-using UnityEngine.AI;
 using UnityEngine.UI;
-using UnityEngine.UIElements;
 
 public class MazeHandlerHuggingFace : MonoBehaviour
 {

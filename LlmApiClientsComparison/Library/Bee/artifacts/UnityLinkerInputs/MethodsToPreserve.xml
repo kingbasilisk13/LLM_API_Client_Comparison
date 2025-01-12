@@ -1,0 +1,10 @@
+<linker>
+	<assembly fullname="Assembly-CSharp" ignoreIfMissing="1">
+		<type fullname="DiscussionScriptHuggingFace">
+			<method name="CancelRequests"/>
+		</type>
+		<type fullname="DiscussionScriptLLMUnity">
+			<method name="CancelRequests"/>
+		</type>
+	</assembly>
+</linker>

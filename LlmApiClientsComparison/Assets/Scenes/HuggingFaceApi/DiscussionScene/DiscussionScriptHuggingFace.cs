@@ -1,12 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using HuggingFace.API;
-using UnityEngine.UIElements;
 using System;
-using UnityEditor.VersionControl;
-using LLMUnity;
 
 public class DiscussionInteractionHuggingFace
 {
